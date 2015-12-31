@@ -1,0 +1,1 @@
+Select [ID] as [编号],[Nick] as [名称] From [SystemUsers] order by [Nick]

@@ -1,0 +1,14 @@
+<%
+new("szType","String")
+szType=Request("Type")
+join(szType,"1")
+
+large(szType,"Error")
+goto("end")
+
+flag("Error")
+=show("类型不能为空!")
+
+flag("End")
+
+%>

@@ -1,0 +1,5 @@
+<%
+new("tabId","int")
+tabId=Request("Form_TableID")
+%>
+Select [Text] as [名称],[ID] as [编号],[Name] as [识标] From [SystemColumns] where [ParentID]=<%=show(tabId)%> order by [Index] asc

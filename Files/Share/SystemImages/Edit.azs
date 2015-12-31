@@ -1,0 +1,3 @@
+<%
+new("szImg","String","aa")
+%>

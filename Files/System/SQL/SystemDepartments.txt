@@ -1,0 +1,8 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemDepartments')
+CREATE TABLE [SystemDepartments](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50)
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemDepartments' and syscolumns.name='Name')
+alter table [SystemDepartments] add [Name] varchar(50);

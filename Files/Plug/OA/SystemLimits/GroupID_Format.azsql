@@ -1,0 +1,5 @@
+<%
+new("id","int")
+id=form("Value")
+%>
+select [Name] From [SystemGroups] where [ID]=<%=show(id)%>

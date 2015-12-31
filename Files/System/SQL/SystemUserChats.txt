@@ -1,0 +1,16 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemUserChats')
+CREATE TABLE [SystemUserChats](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[UserID] numeric(18,0),
+[ChatSign] varchar(50),
+[ChatID] numeric(18,0)
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUserChats' and syscolumns.name='UserID')
+alter table [SystemUserChats] add [UserID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUserChats' and syscolumns.name='ChatSign')
+alter table [SystemUserChats] add [ChatSign] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUserChats' and syscolumns.name='ChatID')
+alter table [SystemUserChats] add [ChatID] numeric(18,0);

@@ -1,0 +1,73 @@
+﻿body {
+    background: #fff;
+    font-size: 14px;
+    color: #222222;
+}
+
+.FileItem {
+    float: left;
+    width: 64px;
+    height: 64px;
+}
+
+a:link {
+    color: #000099;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000099;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6a00;
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    float: left;
+    list-style: none;
+    padding-left: 3px;
+}
+
+table {
+    margin-top: 5px;
+    border-collapse: collapse;
+}
+
+th {
+    background: #0094ff;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+}
+
+td {
+    padding: 3px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.Nav {
+    padding: 3px;
+    background: #EEEEEE;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 0px solid #DDDDDD;
+    margin-top: 5px;
+}
+
+.ListView {
+    padding: 3px;
+    border-top: 0px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}

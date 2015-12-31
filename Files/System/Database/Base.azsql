@@ -1,0 +1,24 @@
+if not exists(select ID from [AosAuthorize] where [DBSign]='Manage')
+Insert into [AosAuthorize]([Name],[Code],[Lv],[DBSign],[DBIP],[DBUser],[DBPwd]) VALUES ('系统管理','0000-0000-0000-0000',10,'Manage','','','');
+
+if not exists(select ID from [AosApps] where [Name]='About')
+Insert into [AosApps]([Name],[Text],[Path],[IsRoot]) VALUES ('About','关于云谊通','/Files/App/System/About/',1);
+
+if not exists(select ID from [AosApps] where [Name]='DBManager')
+Insert into [AosApps]([Name],[Text],[Path],[IsRoot]) VALUES ('DBManager','数据库管理','/Files/App/System/DBManager/',1);
+
+if not exists(select ID from [AosApps] where [Name]='File')
+Insert into [AosApps]([Name],[Text],[Path],[IsRoot]) VALUES ('File','云文件','/Files/App/System/Files/',1);
+
+if not exists(select ID from [AosApps] where [Name]='DataManager')
+Insert into [AosApps]([Name],[Text],[Path],[IsRoot]) VALUES ('DataManager','数据管理','/Files/App/System/DataManager/',1);
+
+if not exists(select ID from [AosApps] where [Name]='Setting')
+Insert into [AosApps]([Name],[Text],[Path],[IsRoot]) VALUES ('Setting','设置','/Files/App/System/Setting/',1);
+
+if not exists(select ID from [AosApps] where [Name]='Auth')
+Insert into [AosApps]([Name],[Text],[Path],[IsRoot]) VALUES ('Auth','授权管理','/Files/App/Aos/Auth/',1);
+
+if not exists(select ID from [AosPlugs] where [Name]='Base')
+Insert into [AosPlugs]([Name],[Path]) VALUES ('Base','/Files/Plug/Base/');
+

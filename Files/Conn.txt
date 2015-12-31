@@ -1,0 +1,1 @@
+data source=127.0.0.1,1433;user id=lianyi;Password=Lianyi2014;Initial Catalog=AzaleaOS

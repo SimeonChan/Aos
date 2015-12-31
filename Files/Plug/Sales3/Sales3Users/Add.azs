@@ -1,0 +1,9 @@
+<%
+new("p1","string")
+p1=request("Arg_S3U_Parent1")
+form("ParentID1",p1)
+
+new("p2","string")
+p2=request("Arg_S3U_Parent2")
+form("ParentID2",p2)
+%>

@@ -1,0 +1,44 @@
+Var UserName,String
+Var UserID,Number
+Var Sql,String
+
+Flag main,1
+
+    ;读取用户名
+    Mov {000},1;指定该Call拥有一个参数
+    LEA {001},"Name"
+    Call UserName,"Request"
+
+    ;生成sql语句
+    Mov Sql,"select id from [SystemUsers] where [Name]='"
+    Join Sql,UserName
+    Join Sql,"'"
+
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call UserID,"SqlRead"
+
+    ;生成sql语句
+    Mov Sql,"if not exists(select id from [SystemUserAppLimits] where [UserID]="
+    Join Sql,UserID
+    Join Sql," and [AppID]=1)insert into [SystemUserAppLimits]([UserID],[AppID],[Limits]) values ("
+    Join Sql,UserID
+    Join Sql,",1,'-r-');"
+
+    Join Sql,"if not exists(select id from [SystemUserAppLimits] where [UserID]="
+    Join Sql,UserID
+    Join Sql," and [AppID]=4)insert into [SystemUserAppLimits]([UserID],[AppID],[Limits]) values ("
+    Join Sql,UserID
+    Join Sql,",4,'-r-');"
+
+    Join Sql,"if not exists(select id from [SystemUserAppLimits] where [UserID]="
+    Join Sql,UserID
+    Join Sql," and [AppID]=5)insert into [SystemUserAppLimits]([UserID],[AppID],[Limits]) values ("
+    Join Sql,UserID
+    Join Sql,",5,'-r-');"
+    
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call {},"SqlExecute"

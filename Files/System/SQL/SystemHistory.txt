@@ -1,0 +1,32 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemHistory')
+CREATE TABLE [SystemHistory](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[Index] int,
+[TableID] numeric(18,0),
+[TableName] varchar(50),
+[RelationID] numeric(18,0),
+[ValueID] numeric(18,0),
+[Text] varchar(50)
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemHistory' and syscolumns.name='Name')
+alter table [SystemHistory] add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemHistory' and syscolumns.name='Index')
+alter table [SystemHistory] add [Index] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemHistory' and syscolumns.name='TableID')
+alter table [SystemHistory] add [TableID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemHistory' and syscolumns.name='TableName')
+alter table [SystemHistory] add [TableName] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemHistory' and syscolumns.name='RelationID')
+alter table [SystemHistory] add [RelationID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemHistory' and syscolumns.name='ValueID')
+alter table [SystemHistory] add [ValueID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemHistory' and syscolumns.name='Text')
+alter table [SystemHistory] add [Text] varchar(50);

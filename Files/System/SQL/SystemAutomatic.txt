@@ -1,0 +1,12 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemAutomatic')
+CREATE TABLE SystemAutomatic(
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[Number] numeric(18,0)
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemAutomatic' and syscolumns.name='Name')
+alter table SystemAutomatic add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemAutomatic' and syscolumns.name='Number')
+alter table SystemAutomatic add [Type] numeric(18,0);

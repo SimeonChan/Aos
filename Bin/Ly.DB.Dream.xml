@@ -1,0 +1,5293 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Ly.DB.Dream
+</name>
+</assembly>
+<members>
+<member name="T:Ly.DB.Dream.MallCatalogs.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallCatalogs.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallCatalogs.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallCatalogs.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallCatalogs.Structure.CatalogID">
+ <summary>
+ CatalogID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallCatalogs.Structure.ImgPath">
+ <summary>
+ ImgPath
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallCatalogs.Structure.Index">
+ <summary>
+ Index
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallCatalogs.Structure.Color">
+ <summary>
+ Color
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallCatalogs.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallCatalogs.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallCatalogs.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallCatalogs.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.MallCatalogs.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallCatalogs.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallCatalogs.ExecutionExp.GetDatasWithOrder">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallContacts.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallContacts.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallContacts.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallContacts.Structure.UserID">
+ <summary>
+ UserID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallContacts.Structure.Contact">
+ <summary>
+ Contact
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallContacts.Structure.Phone">
+ <summary>
+ Phone
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallContacts.Structure.Address">
+ <summary>
+ Address
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallContacts.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallContacts.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallContacts.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallContacts.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.MallContacts.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallContacts.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallContacts.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallGoodImages.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoodImages.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoodImages.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoodImages.Structure.GoodID">
+ <summary>
+ GoodID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoodImages.Structure.ImgPath">
+ <summary>
+ ImgPath
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoodImages.Structure.Index">
+ <summary>
+ Index
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallGoodImages.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallGoodImages.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoodImages.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoodImages.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.MallGoodImages.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoodImages.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallGoodImages.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallGoods.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.CatalogID">
+ <summary>
+ CatalogID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.KeyWords">
+ <summary>
+ KeyWords
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.Price">
+ <summary>
+ Price
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.Unit">
+ <summary>
+ Unit
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.FrontImg">
+ <summary>
+ FrontImg
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.Detail">
+ <summary>
+ Detail
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.Visited">
+ <summary>
+ Visited
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Structure.Sales">
+ <summary>
+ Sales
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallGoods.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallGoods.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallGoods.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.MallGoods.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallGoods.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.ExecutionExp.GetDatasHots">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallGoods.ExecutionExp.GetDatasHots(System.Double)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallOrders.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.UserID">
+ <summary>
+ UserID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.GoodID">
+ <summary>
+ GoodID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.Price">
+ <summary>
+ Price
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.Unit">
+ <summary>
+ Unit
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.FrontImg">
+ <summary>
+ FrontImg
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.Amount">
+ <summary>
+ Amount
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.Contact">
+ <summary>
+ Contact
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.Phone">
+ <summary>
+ Phone
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.Address">
+ <summary>
+ Address
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.PayType">
+ <summary>
+ PayType
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.CreateTime">
+ <summary>
+ CreateTime
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Structure.Status">
+ <summary>
+ Status
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallOrders.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallOrders.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallOrders.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.MallOrders.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallOrders.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallOrders.ExecutionExp.GetCartData(System.Int64,System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallRecharges.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallRecharges.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallRecharges.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallRecharges.Structure.UserID">
+ <summary>
+ UserID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallRecharges.Structure.Money">
+ <summary>
+ Money
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallRecharges.Structure.CreateTime">
+ <summary>
+ CreateTime
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallRecharges.Structure.Status">
+ <summary>
+ Status
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallRecharges.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallRecharges.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallRecharges.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallRecharges.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.MallRecharges.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallRecharges.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallRecharges.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallUsers.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Pwd">
+ <summary>
+ Pwd
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Nick">
+ <summary>
+ Nick
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Phone">
+ <summary>
+ Phone
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.EMail">
+ <summary>
+ EMail
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.RealName">
+ <summary>
+ RealName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Sex">
+ <summary>
+ Sex
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Birthday">
+ <summary>
+ Birthday
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.IDCard">
+ <summary>
+ IDCard
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Ask1">
+ <summary>
+ Ask1
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Answer1">
+ <summary>
+ Answer1
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Ask2">
+ <summary>
+ Ask2
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Answer2">
+ <summary>
+ Answer2
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Ask3">
+ <summary>
+ Ask3
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Answer3">
+ <summary>
+ Answer3
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.PhoneAuth">
+ <summary>
+ PhoneAuth
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.IDAuth">
+ <summary>
+ IDAuth
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.EMailAuth">
+ <summary>
+ EMailAuth
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Status">
+ <summary>
+ Status
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Balance">
+ <summary>
+ Balance
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Lv">
+ <summary>
+ Lv
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.Contact">
+ <summary>
+ Contact
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.CreateTime">
+ <summary>
+ CreateTime
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.PhoneAuthTime">
+ <summary>
+ PhoneAuthTime
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.IDAuthTime">
+ <summary>
+ IDAuthTime
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Structure.EMailAuthTime">
+ <summary>
+ EMailAuthTime
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallUsers.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallUsers.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.MallUsers.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.MallUsers.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.MallUsers.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.MallUsers.ExecutionExp.GetDataByName(System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemAutomatic.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemAutomatic.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemAutomatic.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemAutomatic.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemAutomatic.Structure.Number">
+ <summary>
+ Number
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemAutomatic.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemAutomatic.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemAutomatic.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemAutomatic.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemAutomatic.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemAutomatic.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.ExecutionExp.GetNewAutomatic(System.String)">
+ <summary>
+ 获取一条新的自动编号
+ </summary>
+ <param name="name"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.ExecutionExp.UpdateAutomatic(System.String)">
+ <summary>
+ 更新一条自动编号记录
+ </summary>
+ <param name="name"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.ExecutionExp.AddAutomatic(System.String)">
+ <summary>
+ 添加一条自动编号记录
+ </summary>
+ <param name="name"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemAutomatic.ExecutionExp.GetMaxAutomatic(System.String)">
+ <summary>
+ 获取当前自动编号的最大号
+ </summary>
+ <param name="name"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Ly.DB.Dream.SystemCatalog.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemCatalog.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemCatalog.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemCatalog.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemCatalog.Structure.Belong">
+ <summary>
+ Belong
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemCatalog.Structure.Type">
+ <summary>
+ Type
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemCatalog.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemCatalog.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemCatalog.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemCatalog.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemCatalog.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemCatalog.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemCatalog.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemChats.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.ChatSign">
+ <summary>
+ ChatSign
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.UserID">
+ <summary>
+ UserID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.UserName">
+ <summary>
+ UserName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.GroupID">
+ <summary>
+ GroupID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.FromUserID">
+ <summary>
+ FromUserID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.FromUserName">
+ <summary>
+ FromUserName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.Content">
+ <summary>
+ Content
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.DoTime">
+ <summary>
+ DoTime
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.IsRead">
+ <summary>
+ IsRead
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Structure.ChatType">
+ <summary>
+ ChatType
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemChats.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemChats.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemChats.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemChats.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemChats.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetDatasBySign(System.String,System.Int32)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetDatasBySignAndTime(System.String,System.String)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetDatasBySignAndID(System.String,System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetDatasByUser(System.Int64,System.Int64,System.Int32)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetDatasByUserAndID(System.Int64,System.Int64,System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetDatasByTempUser(System.String,System.Int64,System.Int32)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetDatasByTempUserAndID(System.String,System.Int64,System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetUnreadMeaageCount(System.String,System.Int64)">
+ <summary>
+ 读取组信息数量
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetUnreadUserMeaageCount(System.Int64,System.Int64,System.Int64)">
+ <summary>
+ 读取个人信息数量
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemChats.ExecutionExp.GetUnreadTempMeaageCount(System.String,System.Int64,System.Int64)">
+ <summary>
+ 读取临时信息数量
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemColumns.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.ParentID">
+ <summary>
+ ParentID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Text">
+ <summary>
+ Text
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Type">
+ <summary>
+ Type
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.TypeExp">
+ <summary>
+ TypeExp
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Index">
+ <summary>
+ Index
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Visible">
+ <summary>
+ Visible
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Align">
+ <summary>
+ Align
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Width">
+ <summary>
+ Width
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Length">
+ <summary>
+ Length
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.DefaultValue">
+ <summary>
+ DefaultValue
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Format">
+ <summary>
+ Format
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.EventAdd">
+ <summary>
+ EventAdd
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.EventEdit">
+ <summary>
+ EventEdit
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.Limit">
+ <summary>
+ Limit
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Structure.IsFilter">
+ <summary>
+ IsFilter
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemColumns.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemColumns.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumns.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemColumns.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemColumns.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.ExecutionExp.GetDatasOrderByIndex">
+ <summary>
+ 按照Index排序
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.ExecutionExp.GetDatasWithKey(System.String,System.String,System.Int32)">
+ <summary>
+ 智能提示
+ </summary>
+ <param name="key"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.ExecutionExp.GetDataByParentIDAndText(System.Int64,System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+ <param name="TheParentID"></param>
+ <param name="TheText"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.ExecutionExp.GetDataByParentIDAndName(System.Int64,System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+ <param name="TheParentID"></param>
+ <param name="TheName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.ExecutionExp.GetDatasByName(System.String)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+ <param name="TheName"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumns.ExecutionExp.GetDatasByParentID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+ <param name="TheParentID"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Ly.DB.Dream.SystemColumnTypes.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumnTypes.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumnTypes.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumnTypes.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumnTypes.Structure.Enabled">
+ <summary>
+ Enabled
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemColumnTypes.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemColumnTypes.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumnTypes.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemColumnTypes.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemColumnTypes.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemColumnTypes.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemColumnTypes.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemDepartments.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemDepartments.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemDepartments.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemDepartments.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemDepartments.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemDepartments.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemDepartments.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemDepartments.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemDepartments.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemDepartments.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemDepartments.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemEventNames.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEventNames.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEventNames.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEventNames.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEventNames.Structure.Description">
+ <summary>
+ Description
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemEventNames.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemEventNames.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEventNames.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEventNames.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemEventNames.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEventNames.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemEventNames.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemEvents.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Structure.TableID">
+ <summary>
+ TableID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Structure.Table">
+ <summary>
+ Table
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Structure.AzSQL">
+ <summary>
+ AzSQL
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Structure.AzScript">
+ <summary>
+ AzScript
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Structure.AzJson">
+ <summary>
+ AzJson
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemEvents.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemEvents.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemEvents.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemEvents.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemEvents.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemEvents.ExecutionExp.GetDataByTableAndName(System.Int64,System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemGeneralDatas.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGeneralDatas.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGeneralDatas.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGeneralDatas.Structure.Value">
+ <summary>
+ Value
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGeneralDatas.Structure.Belong">
+ <summary>
+ Belong
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemGeneralDatas.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemGeneralDatas.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGeneralDatas.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGeneralDatas.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemGeneralDatas.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGeneralDatas.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemGeneralDatas.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemGroups.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGroups.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGroups.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGroups.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGroups.Structure.Department">
+ <summary>
+ Department
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemGroups.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemGroups.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGroups.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemGroups.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemGroups.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemGroups.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.ExecutionExp.GetDataByName(System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.ExecutionExp.GetDatasByUserID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemGroups.ExecutionExp.GetDatasByUserIDNoDepartment(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemHistory.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Structure.Index">
+ <summary>
+ Index
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Structure.TableID">
+ <summary>
+ TableID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Structure.TableName">
+ <summary>
+ TableName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Structure.RelationID">
+ <summary>
+ RelationID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Structure.ValueID">
+ <summary>
+ ValueID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Structure.Text">
+ <summary>
+ Text
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemHistory.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemHistory.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemHistory.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemHistory.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemHistory.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.ExecutionExp.GetDataByNameAndIndex(System.String,System.Int32)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemHistory.ExecutionExp.GetDatasByNameAndIndex(System.String,System.Int32)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemImages.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemImages.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemImages.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemImages.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemImages.Structure.ImgPath">
+ <summary>
+ ImgPath
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemImages.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemImages.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemImages.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemImages.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemImages.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemImages.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemImages.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemLimits.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLimits.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLimits.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLimits.Structure.UserID">
+ <summary>
+ UserID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLimits.Structure.GroupID">
+ <summary>
+ GroupID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLimits.Structure.DepartmentID">
+ <summary>
+ DepartmentID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLimits.Structure.TableID">
+ <summary>
+ TableID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLimits.Structure.Limits">
+ <summary>
+ Limits
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemLimits.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemLimits.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLimits.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLimits.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemLimits.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemLimits.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.ExecutionExp.GetDataByUserIDOnly(System.Int64,System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.ExecutionExp.GetDatasByUserID(System.Int64,System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.ExecutionExp.GetDatasByUserGroups(System.Int64,System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLimits.ExecutionExp.GetDatasByDepartmentID(System.Int64,System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemLog.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Structure.SessionID">
+ <summary>
+ SessionID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Structure.UserID">
+ <summary>
+ UserID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Structure.CreateTime">
+ <summary>
+ CreateTime
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Structure.Lv">
+ <summary>
+ Lv
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Structure.Type">
+ <summary>
+ Type
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Structure.Summary">
+ <summary>
+ Summary
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Structure.Detail">
+ <summary>
+ Detail
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemLog.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemLog.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemLog.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemLog.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemLog.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemLog.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemObjects.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemObjects.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemObjects.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemObjects.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemObjects.Structure.Version">
+ <summary>
+ Version
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemObjects.Structure.OAVersion">
+ <summary>
+ OAVersion
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemObjects.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemObjects.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemObjects.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemObjects.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemObjects.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemObjects.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemObjects.ExecutionExp.GetDataByName(System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemPremises.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Structure.TableID">
+ <summary>
+ TableID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Structure.TableName">
+ <summary>
+ TableName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Structure.Column">
+ <summary>
+ Column
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Structure.ColumnName">
+ <summary>
+ ColumnName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Structure.PremiseType">
+ <summary>
+ PremiseType
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Structure.Value">
+ <summary>
+ Value
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Structure.RelationID">
+ <summary>
+ RelationID
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemPremises.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemPremises.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremises.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemPremises.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemPremises.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremises.ExecutionExp.GetDatasByRelationID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemPremiseTypes.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremiseTypes.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremiseTypes.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremiseTypes.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremiseTypes.Structure.Description">
+ <summary>
+ Description
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemPremiseTypes.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemPremiseTypes.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremiseTypes.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemPremiseTypes.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemPremiseTypes.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemPremiseTypes.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemPremiseTypes.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemRelation.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.Type">
+ <summary>
+ Type
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.TableID">
+ <summary>
+ TableID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.RelationTableID">
+ <summary>
+ RelationTableID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.Column">
+ <summary>
+ Column
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.RelationColumn">
+ <summary>
+ RelationColumn
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.Index">
+ <summary>
+ Index
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.Visible">
+ <summary>
+ Visible
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.TableName">
+ <summary>
+ TableName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.RelationTableName">
+ <summary>
+ RelationTableName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.ColumnName">
+ <summary>
+ ColumnName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.RelationColumnName">
+ <summary>
+ RelationColumnName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.PathColumn">
+ <summary>
+ PathColumn
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.PathColumnName">
+ <summary>
+ PathColumnName
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Structure.Path">
+ <summary>
+ Path
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemRelation.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemRelation.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemRelation.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemRelation.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemRelation.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.ExecutionExp.GetDatasByTable(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.ExecutionExp.GetDatasByTableIDAndName(System.Int64,System.String)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.ExecutionExp.GetDatasBySystemTable(System.String)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.ExecutionExp.GetDatasByTableID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemRelation.ExecutionExp.GetDatasByRelationTableID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemSessions.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemSessions.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemSessions.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemSessions.Structure.SessionID">
+ <summary>
+ SessionID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemSessions.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemSessions.Structure.Time">
+ <summary>
+ Time
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemSessions.Structure.Value">
+ <summary>
+ Value
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemSessions.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemSessions.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemSessions.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemSessions.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemSessions.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemSessions.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemSessions.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemTables.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.Text">
+ <summary>
+ Text
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.Type">
+ <summary>
+ Type
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.TypeExp">
+ <summary>
+ TypeExp
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.Index">
+ <summary>
+ Index
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.Visible">
+ <summary>
+ Visible
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.CustomSQL">
+ <summary>
+ CustomSQL
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.InheritTable">
+ <summary>
+ InheritTable
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.InheritSetting">
+ <summary>
+ InheritSetting
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.EventAdd">
+ <summary>
+ EventAdd
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.EventEdit">
+ <summary>
+ EventEdit
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.SaveCheck">
+ <summary>
+ SaveCheck
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Structure.Lv">
+ <summary>
+ Lv
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemTables.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemTables.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTables.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemTables.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemTables.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.ExecutionExp.GetDataByName(System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.ExecutionExp.GetDataByText(System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.ExecutionExp.GetDatasOrderByIndex">
+ <summary>
+ 按照Index排序
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.ExecutionExp.GetDatasWithKey(System.String,System.String,System.Int32)">
+ <summary>
+ 智能提示
+ </summary>
+ <param name="key"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemTables.ExecutionExp.CheckTable(System.String)">
+ <summary>
+ 检测表是否存在
+ </summary>
+ <param name="name"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Ly.DB.Dream.SystemTableTypes.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTableTypes.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTableTypes.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTableTypes.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTableTypes.Structure.Enabled">
+ <summary>
+ Enabled
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemTableTypes.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemTableTypes.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTableTypes.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemTableTypes.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemTableTypes.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemTableTypes.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemTableTypes.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUserChats.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserChats.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserChats.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserChats.Structure.UserID">
+ <summary>
+ UserID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserChats.Structure.ChatSign">
+ <summary>
+ ChatSign
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserChats.Structure.ChatID">
+ <summary>
+ ChatID
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUserChats.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUserChats.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserChats.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserChats.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemUserChats.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUserChats.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserChats.ExecutionExp.GetDataByUserAndSign(System.Int64,System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUserGroups.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserGroups.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserGroups.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserGroups.Structure.UserID">
+ <summary>
+ UserID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserGroups.Structure.GroupID">
+ <summary>
+ GroupID
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUserGroups.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUserGroups.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserGroups.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUserGroups.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemUserGroups.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUserGroups.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUserGroups.ExecutionExp.GetDataByUserAndGroup(System.Int64,System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUsers.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Structure.Pwd">
+ <summary>
+ Pwd
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Structure.Nick">
+ <summary>
+ Nick
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Structure.Jobs">
+ <summary>
+ Jobs
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Structure.Department">
+ <summary>
+ Department
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Structure.UserGroup">
+ <summary>
+ UserGroup
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Structure.ChatLastRead">
+ <summary>
+ ChatLastRead
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUsers.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUsers.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.SystemUsers.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.SystemUsers.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.SystemUsers.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.ExecutionExp.GetDataByName(System.String)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+ <param name="TheName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.ExecutionExp.GetDatasByGroup(System.Int32)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.SystemUsers.ExecutionExp.GetDatasByDepartment(System.Int32)">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebAds.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Structure.ImgPath">
+ <summary>
+ ImgPath
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Structure.BgPath">
+ <summary>
+ BgPath
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Structure.Url">
+ <summary>
+ Url
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Structure.Index">
+ <summary>
+ Index
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Structure.IsEnabled">
+ <summary>
+ IsEnabled
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebAds.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebAds.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebAds.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.WebAds.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebAds.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebAds.ExecutionExp.GetDatasByEnabled">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebArticleList.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebArticleList.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebArticleList.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebArticleList.Structure.ObjID">
+ <summary>
+ ObjID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebArticleList.Structure.ParentID">
+ <summary>
+ ParentID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebArticleList.Structure.Title">
+ <summary>
+ Title
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebArticleList.Structure.Summary">
+ <summary>
+ Summary
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebArticleList.Structure.Img">
+ <summary>
+ Img
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebArticleList.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebArticleList.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebArticleList.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebArticleList.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.WebArticleList.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebArticleList.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebArticleList.ExecutionExp.GetDataByObjID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebHtmls.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebHtmls.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebHtmls.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebHtmls.Structure.ObjID">
+ <summary>
+ ObjID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebHtmls.Structure.HTML">
+ <summary>
+ HTML
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebHtmls.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebHtmls.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebHtmls.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebHtmls.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.WebHtmls.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebHtmls.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebHtmls.ExecutionExp.GetDataByObjID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebMuds.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebMuds.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebMuds.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebMuds.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebMuds.Structure.Path">
+ <summary>
+ Path
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebMuds.Structure.Url">
+ <summary>
+ Url
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebMuds.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebMuds.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebMuds.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebMuds.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.WebMuds.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebMuds.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebMuds.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebSections.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSections.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSections.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSections.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSections.Structure.ObjID">
+ <summary>
+ ObjID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSections.Structure.MudID">
+ <summary>
+ MudID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSections.Structure.ParentID">
+ <summary>
+ ParentID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSections.Structure.Index">
+ <summary>
+ Index
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebSections.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebSections.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSections.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSections.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.WebSections.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebSections.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSections.ExecutionExp.GetDataByObjID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebSites.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.Name">
+ <summary>
+ Name
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.Logo">
+ <summary>
+ Logo
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.Company">
+ <summary>
+ Company
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.CompanyShort">
+ <summary>
+ CompanyShort
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.Color">
+ <summary>
+ Color
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.ColorOver">
+ <summary>
+ ColorOver
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.KeyWords">
+ <summary>
+ KeyWords
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.Description">
+ <summary>
+ Description
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.Address">
+ <summary>
+ Address
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.Phone">
+ <summary>
+ Phone
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.QQ">
+ <summary>
+ QQ
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.EMail">
+ <summary>
+ EMail
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.WeiXin">
+ <summary>
+ WeiXin
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.WeiXinCode">
+ <summary>
+ WeiXinCode
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.WeiBoUrl">
+ <summary>
+ WeiBoUrl
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.BeiAn">
+ <summary>
+ BeiAn
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.IsEnabled">
+ <summary>
+ IsEnabled
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.HomeHost">
+ <summary>
+ HomeHost
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Structure.AzlosHost">
+ <summary>
+ AzlosHost
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebSites.StructureCollection">
+ <summary>
+ 数据集合
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebSites.Execution">
+ <summary>
+ 数据执行
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.#ctor(System.String)">
+ <summary>
+ 实例化一个新的Execution
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Execution.Structure">
+ <summary>
+ 获取结构数据对象
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.WebSites.Execution.StructureCollection">
+ <summary>
+ 获取结构数据集合
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.Add">
+ <summary>
+ 将结构数据添加到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.FillData(System.Data.SqlClient.SqlDataReader,Ly.DB.Dream.WebSites.Structure)">
+ <summary>
+ 判断数据状态并读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.FillData(System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ 读取数据填充到结构中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.GetDataByID(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.GetData(System.Int64)">
+ <summary>
+ 读取指定数据到结构数据中，兼容接口，同GetDataByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.GetDatas">
+ <summary>
+ 读取指定数据到结构数据集合中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.UpdateByID">
+ <summary>
+ 将结构数据更新到数据库中
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.Update">
+ <summary>
+ 将结构数据更新到数据库中，兼容接口，同UpdateByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.DeleteByID(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.Execution.Delete(System.Int64)">
+ <summary>
+ 从数据库中删除相应数据，兼容接口，同DeleteByID，使用时请尽量新接口
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.WebSites.ExecutionExp">
+ <summary>
+ 数据执行自定义类
+ </summary>
+</member>
+<member name="M:Ly.DB.Dream.WebSites.ExecutionExp.GetDataByEnabled">
+ <summary>
+ 读取指定数据到结构数据中
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.My.Resources.Resources">
+<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member>
+<member name="P:Ly.DB.Dream.My.Resources.Resources.ResourceManager">
+<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member>
+<member name="P:Ly.DB.Dream.My.Resources.Resources.Culture">
+<summary>
+  使用此强类型资源类，为所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member>
+<member name="T:Ly.DB.Dream.Tables">
+ <summary>
+ 数据库表集合
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.MallCatalogs">
+ <summary>
+ MallCatalogs表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.MallContacts">
+ <summary>
+ MallContacts表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.MallGoodImages">
+ <summary>
+ MallGoodImages表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.MallGoods">
+ <summary>
+ MallGoods表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.MallOrders">
+ <summary>
+ MallOrders表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.MallRecharges">
+ <summary>
+ MallRecharges表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.MallUsers">
+ <summary>
+ MallUsers表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemAutomatic">
+ <summary>
+ SystemAutomatic表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemCatalog">
+ <summary>
+ SystemCatalog表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemColumns">
+ <summary>
+ SystemColumns表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemColumnTypes">
+ <summary>
+ SystemColumnTypes表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemDepartments">
+ <summary>
+ SystemDepartments表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemEventNames">
+ <summary>
+ SystemEventNames表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemEvents">
+ <summary>
+ SystemEvents表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemGeneralDatas">
+ <summary>
+ SystemGeneralDatas表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemGroups">
+ <summary>
+ SystemGroups表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemHistory">
+ <summary>
+ SystemHistory表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemImages">
+ <summary>
+ SystemImages表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemLimits">
+ <summary>
+ SystemLimits表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemLog">
+ <summary>
+ SystemLog表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemObjects">
+ <summary>
+ SystemObjects表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemPremises">
+ <summary>
+ SystemPremises表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemPremiseTypes">
+ <summary>
+ SystemPremiseTypes表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemRelation">
+ <summary>
+ SystemRelation表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemSessions">
+ <summary>
+ SystemSessions表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemTables">
+ <summary>
+ SystemTables表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemTableTypes">
+ <summary>
+ SystemTableTypes表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemUserGroups">
+ <summary>
+ SystemUserGroups表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.SystemUsers">
+ <summary>
+ SystemUsers表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.WebAds">
+ <summary>
+ WebAds表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.WebArticleList">
+ <summary>
+ WebArticleList表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.WebHtmls">
+ <summary>
+ WebHtmls表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.WebMuds">
+ <summary>
+ WebMuds表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.WebSections">
+ <summary>
+ WebSections表
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.Tables.WebSites">
+ <summary>
+ WebSites表
+ </summary>
+</member>
+<member name="T:Ly.DB.Dream.AzTables.Structure">
+ <summary>
+ 数据结构
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Structure.Properties(System.Int32)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Structure.Properties(System.String)">
+ <summary>
+ 获取或设置属性值
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Structure.ID">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Json.Order">
+ <summary>
+ 排序依据
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Json.Premise">
+ <summary>
+ 查询条件
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Json.Binding">
+ <summary>
+ 绑定列
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Json.Type">
+ <summary>
+ 类型
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Json.Columns">
+ <summary>
+ 列集合
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Json.DefaultTable">
+ <summary>
+ 默认表
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Ly.DB.Dream.AzTables.Json.Tables">
+ <summary>
+ 表集合
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.AzTables.AzSqlToNormSql(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="AzSql"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.AzTables.ExecuteAzJson(System.String)">
+ <summary>
+ 获取数据库中的数据
+ </summary>
+ <param name="AzJson"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.AzTables.ExecuteAzSql(System.String)">
+ <summary>
+ 获取数据库中的数据
+ </summary>
+ <param name="AzSql"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Ly.DB.Dream.AzTables.ExecuteAzSqlSingle(System.String)">
+ <summary>
+ 获取数据库中的一个数据
+ </summary>
+ <param name="AzSql"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

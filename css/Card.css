@@ -1,0 +1,127 @@
+﻿.cardpanel {
+    height: 100%;
+    _height: 100%;
+    min-height: 100%;
+    white-space: nowrap;
+}
+
+.card {
+    float: left;
+    height: 100%;
+    _height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+    white-space: nowrap;
+    display: inline;
+    /*padding: 3px 0px;
+    margin-left: 3px;*/
+}
+
+.card-form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+}
+
+.card-body {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+    padding-top: 100px;
+    z-index: 0;
+}
+
+.card-head {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background: #003763;
+    z-index: 1;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    -moz-opacity: 0.9; /*Firefox私有，透明度50%*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+    border-right: 1px solid #002a4f;
+}
+
+.card-ico {
+    float: left;
+    padding: 12px 0px 0px 12px;
+}
+
+.card-title {
+    float: left;
+    padding: 13px 0px 0px 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.card-close {
+    float: right;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+    .card-close a {
+        display: block;
+        padding: 3px 20px;
+        background: #900;
+        color: #fff;
+    }
+
+        .card-close a:hover {
+            display: block;
+            padding: 3px 20px;
+            background: #C00;
+            color: #fff;
+        }
+
+.card-main {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+    padding: 5px;
+    background: #FFFFFF;
+    border-right: 1px solid #cacdca;
+}
+
+.card-tool {
+    padding: 25px 0px 0px 10px;
+}
+
+    .card-tool a {
+        color: #fff;
+        font-size: 14px;
+        text-shadow: 1px 1px 3px #000;
+    }
+
+        .card-tool a:hover {
+            color: #ff6a00;
+            font-size: 14px;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+    .card-tool span {
+        display: block;
+        width: 1px;
+        background: #096293;
+        height: 100%;
+    }

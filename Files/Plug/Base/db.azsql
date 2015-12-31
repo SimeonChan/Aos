@@ -1,0 +1,2 @@
+if not exists(select ID from [SystemTableTypes] where [Sign]='Manage')
+Insert into [SystemTableTypes]([Name],[AppPath],[Sign],[Enabled]) VALUES ('二维表格','/Files/App/OA/Table2D/','Table2D',1);

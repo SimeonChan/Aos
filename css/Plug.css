@@ -1,0 +1,236 @@
+﻿@charset "utf-8";
+
+.plug-MsgNav {
+    padding: 3px;
+    background: #EEEEEE;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 0px solid #DDDDDD;
+    height: 22px;
+}
+
+    .plug-MsgNav ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .plug-MsgNav li {
+        float: left;
+        list-style: none;
+        padding: 3px;
+        margin-right: 5px;
+        border: 1px solid #EEEEEE;
+        cursor: pointer;
+    }
+
+    .plug-MsgNav img {
+        padding: 0px 0px 0px 0px;
+        margin-right: 3px;
+    }
+
+    .plug-MsgNav span {
+        padding: 1px 0px 0px 0px;
+    }
+
+    .plug-MsgNav a {
+        border: 1px solid #000;
+    }
+
+.plug-Nav {
+    padding: 3px 3px 0px 3px;
+    background: #EEEEEE;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 0px solid #DDDDDD;
+}
+
+    .plug-Nav a {
+        text-decoration: none;
+        color: #0094ff;
+    }
+
+        .plug-Nav a:hover {
+            text-decoration: none;
+            color: #ff6a00;
+        }
+
+    .plug-Nav ul {
+        padding: 0px;
+        margin: 0px 0px 0px 5px;
+    }
+
+    .plug-Nav li {
+        float: left;
+        list-style: none;
+        padding: 5px 0px 5px 6px;
+        margin-right: 5px;
+        border: 1px solid #EEEEEE;
+        cursor: pointer;
+    }
+
+    .plug-Nav img {
+        padding: 0px 0px 0px 0px;
+        margin-right: 3px;
+    }
+
+    .plug-Nav span {
+        padding: 1px 0px 0px 0px;
+    }
+
+.plug-li-right {
+    border-right: 1px solid #0094ff;
+}
+
+.plug-Path {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+    .plug-Path a {
+        text-decoration: none;
+        color: #0094ff;
+    }
+
+        .plug-Path a:hover {
+            text-decoration: none;
+            color: #ff6a00;
+        }
+
+    .plug-Path ul {
+        padding: 0px;
+        margin: 0px 0px 0px 5px;
+    }
+
+    .plug-Path li {
+        float: left;
+        list-style: none;
+        padding: 5px 0px 5px 3px;
+        cursor: pointer;
+    }
+
+.plug-li-select {
+    border: 1px solid #0094ff;
+    background: #cdeaff;
+}
+
+.plug-NavLine {
+    overflow-x: auto;
+    padding: 5px 5px 5px 5px;
+    border-top: 0px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+    .plug-NavLine table {
+        border-collapse: collapse;
+        border: 1px solid #9eb6ce;
+    }
+
+    .plug-NavLine th {
+        background: #e4ecf7;
+        border: 1px solid #9eb6ce;
+        padding: 5px;
+        color: #27413e;
+    }
+
+    .plug-NavLine td {
+        padding: 3px;
+        vertical-align: middle;
+        white-space: nowrap;
+        border: 1px solid #d0d7e5;
+    }
+
+.plug-ListView {
+    margin: 0 auto;
+    width: 662px;
+    height: 382px;
+    background: url(../Images/bg.jpg);
+}
+
+.plug-TextBox {
+    width: 234px;
+    height: 20px;
+    border: 1px solid #0c4d2f;
+    padding: 1px 3px 1px 3px;
+}
+
+
+.plug-text-300-18 {
+    width: 300px;
+    height: 18px;
+    border: 1px solid #5284bc;
+    padding-left: 3px;
+}
+
+.plug-text-300-25 {
+    width: 300px;
+    height: 25px;
+    border: 1px solid #5284bc;
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.plug-text-300-100 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #5284bc;
+    padding-left: 3px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.plug-text-100-18 {
+    width: 100px;
+    height: 18px;
+    border: 1px solid #5284bc;
+    padding-left: 3px;
+}
+
+.plug-text-60-18 {
+    width: 60px;
+    height: 18px;
+    border: 1px solid #5284bc;
+    padding-left: 3px;
+}
+
+.plug-text-130-18 {
+    width: 130px;
+    height: 18px;
+    border: 1px solid #5284bc;
+    padding-left: 3px;
+}
+
+.plug-text-100-25 {
+    width: 100px;
+    height: 25px;
+    border: 1px solid #5284bc;
+    padding-left: 3px;
+}
+
+.plug-button-1 {
+    width: 103px;
+    height: 45px;
+    cursor: pointer;
+    border: #DDD 0px solid;
+    background: url(/Images/button.jpg);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.plug-label-explain {
+    font-size: 12px;
+    color: #888888;
+}
+
+.plug-button-80-25 {
+    width: 80px;
+    height: 25px;
+}
+
+.plug-button-150-25 {
+    width: 150px;
+    height: 25px;
+}

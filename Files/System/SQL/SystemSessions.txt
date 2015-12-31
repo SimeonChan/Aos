@@ -1,0 +1,20 @@
+﻿If Not Exists(select ID from sysobjects where type='U' and name='SystemSessions')
+CREATE TABLE SystemSessions(
+[ID] numeric (18,0) identity(1,1) PRIMARY KEY,
+[SessionID] varchar(50),
+[Name] varchar(50),
+[Time] varchar(50),
+[Value] Text
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemSessions' and syscolumns.name='SessionID')
+alter table [SystemSessions] add [SessionID] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemSessions' and syscolumns.name='Time')
+alter table [SystemSessions] add [Time] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemSessions' and syscolumns.name='Name')
+alter table [SystemSessions] add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemSessions' and syscolumns.name='Value')
+alter table [SystemSessions] add [Value] Text;

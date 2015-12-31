@@ -1,0 +1,5 @@
+<%
+new("id","int")
+id=form("Value")
+%>
+Select [Text] From [SystemTables] where [ID]=<%=show(id)%>

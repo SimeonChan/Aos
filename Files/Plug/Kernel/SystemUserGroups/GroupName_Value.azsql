@@ -1,0 +1,1 @@
+Select [ID] as [编号],[Name] as [名称] From [SystemGroups] order by [Name]

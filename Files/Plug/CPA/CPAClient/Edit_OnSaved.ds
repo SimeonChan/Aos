@@ -1,0 +1,62 @@
+Var Code,String
+Var Name,String
+Var DepartmentID,number
+Var Sql,String
+var UserID,number
+var Now,string
+
+Flag main,1
+
+    ;读取用户编号
+    Mov {000},1
+    LEA {001},"ID"
+    Call UserID,"User"
+
+    ;读取当前时间
+    Mov {000},0
+    Call Now,"GetDateTime"
+
+    ;读取企业编号
+    Mov {000},1
+    LEA {001},"Code"
+    Call Code,"Request"
+
+    ;读取企业名称
+    Mov {000},1
+    LEA {001},"Name"
+    Call Name,"Request"
+
+    ;读取所属部门
+    Mov {000},1
+    LEA {001},"DepartmentID"
+    Call DepartmentID,"Request"
+
+    ;生成sql语句
+    Mov Sql,"if not exists(select id from [CPAAccountClient] where [Code]='"
+    Join Sql,Code
+    Join Sql,"')insert into [CPAAccountClient]([Code],[Name],[DepartmentID],[OperateTime],[ProcessID],[OperateUser]) values ('"
+    Join Sql,Code
+    Join Sql,"','"
+    Join Sql,Name
+    Join Sql,"',"
+    Join Sql,DepartmentID
+    Join Sql,",'"
+    Join Sql,Now
+    Join Sql,"',0,"
+    Join Sql,UserID
+    Join Sql,");"
+
+    Join Sql,"if exists(select id from [CPAAccountClient] where [Code]='"
+    Join Sql,Code
+    Join Sql,"')update [CPAAccountClient] set [Name]='"
+    Join Sql,Name
+    Join Sql,"',[DepartmentID]="
+    Join Sql,DepartmentID
+    Join Sql," where [Code]='"
+    Join Sql,Code
+    Join Sql,"';"
+    
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call {},"SqlExecute"

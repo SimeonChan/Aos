@@ -1,0 +1,13 @@
+<%
+new("nTab","int")
+nTab=form("TableID.Content")
+
+new("szSql","string")
+mov(szSql,"Select [Text] From [SystemTables] where [ID]=")
+join(szSql,nTab)
+
+new("szTab","string")
+szTab=sqlread(szSql)
+
+form("TableName.Content",szTab)
+%>

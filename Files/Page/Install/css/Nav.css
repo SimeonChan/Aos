@@ -1,0 +1,30 @@
+﻿body {
+}
+
+.Navigation {
+    padding: 5px;
+    background: #EEEEEE;
+    border: 1px solid #DDDDDD;
+}
+
+    .Navigation dl {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .Navigation dd {
+        float: left;
+        list-style: none;
+        padding: 5px 10px 5px 10px;
+        margin: 0px;
+        border: 1px solid #EEEEEE;
+    }
+
+    .Navigation dt {
+        float: left;
+        border: 1px solid #0094ff;
+        background: #cdeaff;
+        list-style: none;
+        padding: 5px 10px 5px 10px;
+        margin: 0px;
+    }

@@ -1,0 +1,68 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemColumns')
+CREATE TABLE SystemColumns(
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[ParentID] numeric(18,0),
+[Name] varchar(50),
+[Text] varchar(50),
+[Type] varchar(50),
+[TypeExp] varchar(50),
+[Index] int,
+[Visible] int,
+[Align] varchar(50),
+[Width] int,
+[Length] int,
+[DefaultValue] text,
+[Format] text,
+[EventAdd] int,
+[EventEdit] int,
+[Limit] varchar(50),
+[IsFilter] int
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='ParentID')
+alter table SystemColumns add [ParentID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Name')
+alter table SystemColumns add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Text')
+alter table SystemColumns add [Text] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Type')
+alter table SystemColumns add [Type] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='TypeExp')
+alter table SystemColumns add [TypeExp] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Index')
+alter table [SystemColumns] add [Index] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Visible')
+alter table [SystemColumns] add [Visible] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Align')
+alter table [SystemColumns] add [Align] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Width')
+alter table [SystemColumns] add [Width] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Length')
+alter table [SystemColumns] add [Length] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='DefaultValue')
+alter table [SystemColumns] add [DefaultValue] text;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Format')
+alter table [SystemColumns] add [Format] text;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='EventAdd')
+alter table [SystemColumns] add [EventAdd] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='EventEdit')
+alter table [SystemColumns] add [EventEdit] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='Limit')
+alter table [SystemColumns] add [Limit] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemColumns' and syscolumns.name='IsFilter')
+alter table [SystemColumns] add [IsFilter] int;

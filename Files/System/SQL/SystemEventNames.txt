@@ -1,0 +1,15 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemEventNames')
+CREATE TABLE [SystemEventNames](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[Description] text
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemEventNames' and syscolumns.name='Name')
+alter table [SystemEventNames] add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemEventNames' and syscolumns.name='Description')
+alter table [SystemEventNames] add [Description] text;
+
+If Not Exists(SELECT [ID] FROM [SystemEventNames] WHERE [Name]='Added')
+INSERT INTO [SystemEventNames]([Name],[Description]) VALUES ('Added','数据添加之后触发的事件');

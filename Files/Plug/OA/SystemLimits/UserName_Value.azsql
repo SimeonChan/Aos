@@ -1,0 +1,1 @@
+Select [SystemUsers].[ID],[SystemAuthorize].[Name] as [AuthName],[SystemUsers].[Name],[SystemUsers].[Nick] From [SystemUsers],[SystemAuthorize] where [SystemUsers].[AuthID]=[SystemAuthorize].[ID]

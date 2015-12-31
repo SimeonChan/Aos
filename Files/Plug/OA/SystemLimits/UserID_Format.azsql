@@ -1,0 +1,5 @@
+<%
+new("id","int")
+id=form("Value")
+%>
+select '['+[SystemAuthorize].[Name]+']'+[SystemUsers].[Nick] as [Name]  From [SystemUsers],[SystemAuthorize] where [SystemUsers].[ID]=<%=show(id)%> and [SystemUsers].[AuthID]=[SystemAuthorize].[ID]

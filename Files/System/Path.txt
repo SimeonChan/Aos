@@ -1,0 +1,21 @@
+{
+  SYSTEM:"/Files/System",
+  USER:"/Files/User/<AuthCode>/<UserName>",
+  SHARE:"/Files/Share/<AuthCode>",
+  APP:"/Files/App",
+
+  APPS:"<SystemPath>/Apps.txt",
+  EXTENSION:"<SystemPath>/Extension.txt",
+  INSTALL_SQL:"<SystemPath>/SQL",
+  SYSTEM_COLUMNS_SETTING:"<SystemPath>/Column",
+  SYSTEM_UI_SETTING:"<SystemPath>/UI",
+  DEFAULT_BACKGROUND:"<SystemPath>/Background/Water02.jpg",
+  SYSTEM_BACKGROUND:"<SystemPath>/Background",
+  SYSTEM_SQL_SETTING:"<SystemPath>/AzSQL",
+
+  SHARE_COLUMNS_SETTING:"<SharePath>/Column",
+  SHARE_UI_SETTING:"<SharePath>/UI",
+  SHARE_SQL_SETTING:"<SharePath>/SQL",
+
+  USER_SETTING:"<UserPath>/Setting.json"
+}

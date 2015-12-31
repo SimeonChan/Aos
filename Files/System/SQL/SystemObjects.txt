@@ -1,0 +1,6 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemObjects')
+CREATE TABLE SystemObjects(
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[Version] varchar(50)
+);

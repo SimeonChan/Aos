@@ -1,0 +1,80 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemRelation')
+CREATE TABLE [SystemRelation](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[TableID] numeric(18,0),
+[RelationTableID] numeric(18,0),
+[Column] varchar(50),
+[RelationColumn] varchar(50),
+[Index] int,
+[Visible] int,
+[TableName] varchar(50),
+[RelationTableName] varchar(50),
+[ColumnName] varchar(50),
+[RelationColumnName] varchar(50),
+[PathColumn] varchar(50),
+[PathColumnName] varchar(50)
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='Name')
+alter table SystemTables add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='TableID')
+alter table [SystemRelation] add [TableID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='RelationTableID')
+alter table [SystemRelation] add [RelationTableID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='Column')
+alter table [SystemRelation] add [Column] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='RelationColumn')
+alter table [SystemRelation] add [RelationColumn] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='Index')
+alter table [SystemRelation] add [Index] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='Visible')
+alter table [SystemRelation] add [Visible] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='TableName')
+alter table [SystemRelation] add [TableName] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='RelationTableName')
+alter table [SystemRelation] add [RelationTableName] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='ColumnName')
+alter table [SystemRelation] add [ColumnName] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='RelationColumnName')
+alter table [SystemRelation] add [RelationColumnName] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='PathColumn')
+alter table [SystemRelation] add [PathColumn] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemRelation' and syscolumns.name='PathColumnName')
+alter table [SystemRelation] add [PathColumnName] varchar(50);
+
+If Not Exists(SELECT [ID] FROM [SystemRelation] WHERE [Name]='表结构')
+INSERT INTO [SystemRelation]([Name],[TableID],[RelationTableID],[Column],[RelationColumn],[Index],[Visible],[TableName],[RelationTableName],[ColumnName],[RelationColumnName],[PathColumn],[PathColumnName]) VALUES ('表结构',0,0,'','',0,1,'SystemTables','SystemColumns','ID','ParentID','','Text');
+
+If Not Exists(SELECT [ID] FROM [SystemRelation] WHERE [Name]='表格事件')
+INSERT INTO [SystemRelation]([Name],[TableID],[RelationTableID],[Column],[RelationColumn],[Index],[Visible],[TableName],[RelationTableName],[ColumnName],[RelationColumnName],[PathColumn],[PathColumnName]) VALUES ('表格事件',0,0,'','',10,1,'SystemTables','SystemEvents','ID','TableID','','Text');
+
+If Not Exists(SELECT [ID] FROM [SystemRelation] WHERE [Name]='关联条件')
+INSERT INTO [SystemRelation]([Name],[TableID],[RelationTableID],[Column],[RelationColumn],[Index],[Visible],[TableName],[RelationTableName],[ColumnName],[RelationColumnName],[PathColumn],[PathColumnName]) VALUES ('关联条件',0,0,'','',10,1,'SystemRelation','SystemPremises','ID','RelationID','','Name');
+
+If Not Exists(SELECT [ID] FROM [SystemRelation] WHERE [Name]='所属用户组')
+INSERT INTO [SystemRelation]([Name],[TableID],[RelationTableID],[Column],[RelationColumn],[Index],[Visible],[TableName],[RelationTableName],[ColumnName],[RelationColumnName],[PathColumn],[PathColumnName]) VALUES ('所属用户组',0,0,'','',10,1,'SystemUsers','SystemUserGroups','ID','UserID','','Nick');
+
+If Not Exists(SELECT [ID] FROM [SystemRelation] WHERE [Name]='所属用户')
+INSERT INTO [SystemRelation]([Name],[TableID],[RelationTableID],[Column],[RelationColumn],[Index],[Visible],[TableName],[RelationTableName],[ColumnName],[RelationColumnName],[PathColumn],[PathColumnName]) VALUES ('所属用户',0,0,'','',10,1,'SystemGroups','SystemUserGroups','ID','GroupID','','Name');
+
+If Not Exists(SELECT [ID] FROM [SystemRelation] WHERE [Name]='用户权限')
+INSERT INTO [SystemRelation]([Name],[TableID],[RelationTableID],[Column],[RelationColumn],[Index],[Visible],[TableName],[RelationTableName],[ColumnName],[RelationColumnName],[PathColumn],[PathColumnName]) VALUES ('用户权限',0,0,'','',10,1,'SystemUsers','SystemLimits','ID','UserID','','Nick');
+
+If Not Exists(SELECT [ID] FROM [SystemRelation] WHERE [Name]='用户组权限')
+INSERT INTO [SystemRelation]([Name],[TableID],[RelationTableID],[Column],[RelationColumn],[Index],[Visible],[TableName],[RelationTableName],[ColumnName],[RelationColumnName],[PathColumn],[PathColumnName]) VALUES ('用户组权限',0,0,'','',10,1,'SystemGroups','SystemLimits','ID','GroupID','','Name');
+
+If Not Exists(SELECT [ID] FROM [SystemRelation] WHERE [Name]='部门权限')
+INSERT INTO [SystemRelation]([Name],[TableID],[RelationTableID],[Column],[RelationColumn],[Index],[Visible],[TableName],[RelationTableName],[ColumnName],[RelationColumnName],[PathColumn],[PathColumnName]) VALUES ('部门权限',0,0,'','',10,1,'SystemDepartments','SystemLimits','ID','DepartmentID','','Name');

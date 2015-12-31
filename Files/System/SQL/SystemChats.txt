@@ -1,0 +1,44 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemChats')
+CREATE TABLE [SystemChats](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[ChatSign] varchar(50),
+[UserID] numeric(18,0),
+[UserName] varchar(50),
+[GroupID] numeric(18,0),
+[FromUserID] numeric(18,0),
+[FromUserName] varchar(50),
+[Content] text,
+[DoTime] varchar(50),
+[IsRead] int,
+[ChatType] int
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='ChatSign')
+alter table [SystemChats] add [ChatSign] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='UserID')
+alter table [SystemChats] add [UserID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='UserName')
+alter table [SystemChats] add [UserName] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='GroupID')
+alter table [SystemChats] add [GroupID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='FromUserID')
+alter table [SystemChats] add [FromUserID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='FromUserName')
+alter table [SystemChats] add [FromUserName] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='Content')
+alter table [SystemChats] add [Content] text;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='DoTime')
+alter table [SystemChats] add [DoTime] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='IsRead')
+alter table [SystemChats] add [IsRead] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemChats' and syscolumns.name='ChatType')
+alter table [SystemChats] add [ChatType] int;

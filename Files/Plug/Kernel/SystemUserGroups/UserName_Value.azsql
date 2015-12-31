@@ -1,0 +1,1 @@
+Select [ID],[Name],[Nick] From [SystemUsers] order by [Nick]

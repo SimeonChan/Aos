@@ -1,0 +1,35 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemUsers')
+CREATE TABLE SystemUsers(
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[Pwd] varchar(50),
+[Nick] varchar(50),
+[Jobs] int,
+[Department] numeric(18,0),
+[UserGroup] numeric(18,0),
+[ChatLastRead] varchar(50)
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUsers' and syscolumns.name='Name')
+alter table [SystemUsers] add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUsers' and syscolumns.name='Pwd')
+alter table [SystemUsers] add [Pwd] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUsers' and syscolumns.name='Nick')
+alter table [SystemUsers] add [Nick] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUsers' and syscolumns.name='Jobs')
+alter table [SystemUsers] add [Jobs] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUsers' and syscolumns.name='Department')
+alter table [SystemUsers] add [Department] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUsers' and syscolumns.name='UserGroup')
+alter table [SystemUsers] add [UserGroup] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUsers' and syscolumns.name='ChatLastRead')
+alter table [SystemUsers] add [ChatLastRead] varchar(50);
+
+If Not Exists(SELECT [ID] FROM [SystemUsers] WHERE [Name]='admin')
+INSERT INTO [SystemUsers]([Name],[Pwd],[Nick],[Jobs],[Department]) VALUES ('admin','','管理员',0,0);

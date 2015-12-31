@@ -1,0 +1,32 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemPremises')
+CREATE TABLE [SystemPremises](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[TableID] numeric(18,0),
+[TableName] varchar(50),
+[Column] varchar(50),
+[ColumnName] varchar(50),
+[PremiseType] varchar(50),
+[Value] Text,
+[RelationID] numeric(18,0)
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemPremises' and syscolumns.name='TableID')
+alter table [SystemPremises] add [TableID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemPremises' and syscolumns.name='TableName')
+alter table [SystemPremises] add [TableName] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemPremises' and syscolumns.name='Column')
+alter table [SystemPremises] add [Column] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemPremises' and syscolumns.name='ColumnName')
+alter table [SystemPremises] add [ColumnName] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemPremises' and syscolumns.name='PremiseType')
+alter table [SystemPremises] add [PremiseType] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemPremises' and syscolumns.name='Value')
+alter table [SystemPremises] add [Value] Text;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemPremises' and syscolumns.name='RelationID')
+alter table [SystemPremises] add [RelationID] numeric(18,0);

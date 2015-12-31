@@ -1,0 +1,124 @@
+Var UserID,Number
+Var Sql,String
+var ProcessID,number
+Var ProcessName,String
+var Now,string
+var Date,string
+var Time,string
+var Code,string
+var CName,string
+var szStr,string
+var Detail,string
+
+Flag main,1
+
+    ;读取用户编号
+    Mov {000},1
+    LEA {001},"ID"
+    Call UserID,"User"
+
+    ;读取当前时间
+    Mov {000},0
+    Call Now,"GetDateTime"
+    Call Date,"GetDate"
+    Call Time,"GetTime"
+
+    ;读取流程编号
+    Mov {000},1;指定该Call拥有一个参数
+    LEA {001},"ProcessID"
+    Call ProcessID,"Request"
+
+    ;生成sql语句
+    Mov Sql,"select [Name] from [EMProcess] where [ID]="
+    Join Sql,ProcessID
+
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call ProcessName,"SqlRead"
+
+    ;读取企业编码
+    Mov {000},1;指定该Call拥有一个参数
+    LEA {001},"Code"
+    Call Code,"Request"
+
+    ;生成sql语句
+    Mov Sql,"select [Name] from [CPAClient] where [Code]='"
+    Join Sql,Code
+    Join Sql,"'"
+
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call CName,"SqlRead"
+
+    ;读取详情
+    Mov {000},1;指定该Call拥有一个参数
+    LEA {001},"Detail"
+    Call Detail,"Request"
+
+    ;生成更新[CPAAccountClient]表sql语句
+    Mov Sql,"update [CPAAccountClient] set [OperateTime]='"
+    Join Sql,Now
+    Join Sql,"',[ProcessID]="
+    Join Sql,ProcessID
+    Join Sql,",[OperateUser]="
+    Join Sql,UserID
+    Join Sql," where [Code]='"
+    Join Sql,Code
+    Join Sql,"';"
+
+    ;生成更新[CPAClient]表sql语句
+    Join Sql,"update [CPAClient] set [OperateTime]='"
+    Join Sql,Now
+    Join Sql,"',[OperateStatus]='"
+    Join Sql,ProcessName
+    Join Sql,"',[OperateUser]="
+    Join Sql,UserID
+    Join Sql," where [Code]='"
+    Join Sql,Code
+    Join Sql,"';"
+
+    mov szStr,"* 于"
+    Join szStr,Time
+    Join szStr,"更新 "
+    Join szStr,CName
+    Join szStr," 代理记账状态为 "
+    Join szStr,ProcessName
+    Join szStr,",详情:"
+    Join szStr,Detail
+
+    ;生成更新日志的sql
+    Join Sql,"if exists(select id from [EMDaily] where [DailyDate]='"
+    Join Sql,Date
+    Join Sql,"' and [OperateUser]="
+    Join Sql,UserID
+    Join Sql,")update [EMDaily] set [Content]=convert(varchar(8000),[Content])+'"
+    Join Sql,szStr
+    Join Sql,"'+char(13)+char(10),[OperateTime]='"
+    Join Sql,Now
+    Join Sql,"' where [DailyDate]='"
+    Join Sql,Date
+    Join Sql,"' and [OperateUser]="
+    Join Sql,UserID
+    Join Sql,";"
+
+    ;生成添加日志的sql语句
+    join Sql,"if not exists(select id from [EMDaily] where [DailyDate]='"
+    Join Sql,Date
+    Join Sql,"' and [OperateUser]="
+    Join Sql,UserID
+    Join Sql,")insert into [EMDaily]([DailyDate],[Content],[OperateTime],[OperateUser]) values ('"
+    Join Sql,Date
+    Join Sql,"','"
+    Join Sql,szStr
+    Join Sql,"','"
+    Join Sql,Now
+    Join Sql,"',"
+    Join Sql,UserID
+    Join Sql,");"
+
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call {},"SqlExecute"

@@ -1,0 +1,1 @@
+select [SystemGeneralDatas].[Value] from [SystemGeneralDatas],[SystemCatalog] where [SystemGeneralDatas].[Belong]=[SystemCatalog].[ID] and [SystemCatalog].[Name]='上课时间' order by [SystemGeneralDatas].[ID]

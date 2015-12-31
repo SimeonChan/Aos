@@ -1,0 +1,30 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemTableTypes')
+CREATE TABLE SystemTableTypes(
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[Enabled] int
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTableTypes' and syscolumns.name='Name')
+alter table SystemTableTypes add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTableTypes' and syscolumns.name='Enabled')
+alter table [SystemTableTypes] add [Enabled] int;
+
+If Not Exists(SELECT [ID] FROM [SystemTableTypes] WHERE [Name]='普通数据表')
+INSERT INTO [SystemTableTypes]([Name],[Enabled]) VALUES ('普通数据表',1);
+
+If Not Exists(SELECT [ID] FROM [SystemTableTypes] WHERE [Name]='日数据表')
+INSERT INTO [SystemTableTypes]([Name],[Enabled]) VALUES ('日数据表',1);
+
+If Not Exists(SELECT [ID] FROM [SystemTableTypes] WHERE [Name]='月数据表')
+INSERT INTO [SystemTableTypes]([Name],[Enabled]) VALUES ('月数据表',1);
+
+If Not Exists(SELECT [ID] FROM [SystemTableTypes] WHERE [Name]='年数据表')
+INSERT INTO [SystemTableTypes]([Name],[Enabled]) VALUES ('年数据表',1);
+
+If Not Exists(SELECT [ID] FROM [SystemTableTypes] WHERE [Name]='查询表')
+INSERT INTO [SystemTableTypes]([Name],[Enabled]) VALUES ('查询表',1);
+
+If Not Exists(SELECT [ID] FROM [SystemTableTypes] WHERE [Name]='汇总表')
+INSERT INTO [SystemTableTypes]([Name],[Enabled]) VALUES ('汇总表',1);

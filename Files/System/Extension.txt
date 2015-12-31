@@ -1,0 +1,15 @@
+{
+  Ver:1.0,
+  Unknow:{Name:"未知文档",Icon:"/images/Icon/unknown.png",App:""},
+  rar:{Name:"压缩文档",Icon:"/images/Icon/RAR.png",App:""},
+  txt:{Name:"文本文档",Icon:"/images/Icon/txt.png",App:"/Files/App/Com_Editer/Default.aspx",Dir:"/Files/App/Editer/Text/",Type:"Ajax"},
+  zip:{Name:"压缩文档",Icon:"/images/Icon/RAR.png",App:""},
+  aspx:{Name:"Asp.Net页面文件",Icon:"/images/Icon/txt.png",App:"/Files/App/Com_Editer/Default.aspx"},
+  cs:{Name:"C#代码文件",Icon:"/images/Icon/txt.png",App:"/Files/App/Com_Editer/Default.aspx"},
+  vb:{Name:"VB代码文件",Icon:"/images/Icon/txt.png",App:"/Files/App/Com_Editer/Default.aspx"},
+  js:{Name:"JS脚本文件",Icon:"/images/Icon/txt.png",App:"/Files/App/Com_Editer/Default.aspx"},
+  json:{Name:"加密Json文件",Icon:"/images/Icon/txt.png",App:"/Files/App/Editer/Json/",Dir:"/Files/App/Editer/Json/",Type:"Ajax"},sxml:{Name:"加密Xml文件",Icon:"/images/Icon/txt.png",App:"/Files/App/Editer/Json/",Dir:"/Files/App/Editer/Json/",Type:"Ajax"},
+  jpg:{Name:"JPEG图像文件",Icon:"/images/Icon/pic.png",App:"/Files/App/Com_ImageView/Default.aspx"},
+  png:{Name:"PNG图像文件",Icon:"/images/Icon/pic.png",App:"/Files/App/Com_ImageView/Default.aspx"},
+  azsql:{Name:"Azalea专用SQL脚本文件",Icon:"/images/Icon/sql.png",App:"/Files/App/Com_Editer/Default.aspx",Dir:"/Files/App/Editer/AzSql/",Type:"Ajax"},
+  azs:{Name:"Azalea专用脚本文件",Icon:"/images/Icon/Azs.png",App:"/Files/App/Com_Editer/Default.aspx",Dir:"/Files/App/Editer/AzSql/",Type:"Ajax"},ds:{Name:"DS脚本文件",Icon:"/images/Icon/txt.png",App:"/Files/App/Com_Editer/Default.aspx",Dir:"/Files/App/Editer/Text/",Type:"Ajax"},xml:{Name:"Xml文档",Icon:"/images/Icon/txt.png",App:"/Files/App/Com_Editer/Default.aspx",Dir:"/Files/App/Editer/Text/",Type:"Ajax"}}

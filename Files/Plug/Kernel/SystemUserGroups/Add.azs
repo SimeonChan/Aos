@@ -1,0 +1,13 @@
+<%
+new("nTab","int")
+nTab=form("GroupID.Content")
+
+new("szSql","string")
+mov(szSql,"Select [Name] From [SystemGroups] where [ID]=")
+join(szSql,nTab)
+
+new("szTab","string")
+szTab=sqlread(szSql)
+
+form("GroupName.Content",szTab)
+%>

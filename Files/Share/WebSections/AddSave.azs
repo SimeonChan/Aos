@@ -1,0 +1,8 @@
+<%
+new("nAuto","int")
+nAuto=autonum("Web.Object")
+form("ObjID",nAuto)
+
+nAuto=autonum("Web.Index.Index")
+form("Index",nAuto)
+%>

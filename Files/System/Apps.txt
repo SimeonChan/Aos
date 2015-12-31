@@ -1,0 +1,9 @@
+﻿{
+  Ver:1.0,
+  App:{Name:"平台数据库管理",Type:"Ajax",ID:"DBManager",Dir:"System/DBManager",Icon:"/Files/App/System/DBManager/logo.png",App:"/Files/App/System/DBManager/Install.aspx",Js:"/Files/App/System/DBManager/js/Default.js",User:"|root|"},
+  App:{Name:"#(TableList)",User:"|*|"},
+  App:{Name:"文档管理器",Type:"Ajax",ID:"Files",Dir:"System/Files",Icon:"/Files/App/System/Files/logo.png",App:"/Files/App/System/Files/Default.aspx",User:"|root|"},
+  App:{Name:"即时通讯",Type:"Page",ID:"Chat",Dir:"Chat",Icon:"/Files/Page/Chat/logo.png",App:"/Files/Page/Chat/Default.aspx",User:"|root|"},
+  App:{Name:"个人设置",Type:"Ajax",ID:"Setting",Dir:"System/Setting",Icon:"/Files/App/System/Setting/logo.png",App:"/Files/App/System/Setting/Default.aspx",User:"|*|",Width:700},
+  App:{Name:"关于本产品",Type:"Ajax",ID:"About",Dir:"System/About",Icon:"/Files/App/System/About/logo.png",App:"/Files/App/System/Setting/Default.aspx",User:"|*|",Width:700}
+}

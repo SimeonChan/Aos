@@ -1,0 +1,194 @@
+﻿body {
+    background: #0067ba;
+    overflow: hidden;
+    font-family: 微软雅黑;
+    /*
+        background: url(/images/back.jpg) repeat;
+        */
+}
+
+.page-tooltask {
+    float: left;
+    background: #004378;
+    filter: alpha(opacity=90); /*IE滤镜，透明度50%*/
+    -moz-opacity: 0.9; /*Firefox私有，透明度50%*/
+    opacity: 0.9; /*其他，透明度50%*/
+    height: 100%;
+}
+
+.page-window {
+    position: absolute;
+    left: 50px;
+    top: 85px;
+    overflow: hidden;
+}
+
+.page-window-bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #000;
+    filter: alpha(opacity=80); /*IE滤镜，透明度50%*/
+    -moz-opacity: 0.8; /*Firefox私有，透明度50%*/
+    opacity: 0.8; /*其他，透明度50%*/
+    z-index: 0;
+}
+
+.page-window-rect {
+    position: relative;
+    padding: 0px;
+}
+
+.page-window-title {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background: #000;
+    filter: alpha(opacity=80); /*IE滤镜，透明度50%*/
+    -moz-opacity: 0.8; /*Firefox私有，透明度50%*/
+    opacity: 0.8; /*其他，透明度50%*/
+    height: 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0px 0px 5px;
+    overflow: visible;
+}
+
+.page-window-logo {
+    float: left;
+    background: #000;
+    height: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -33px;
+    margin-left: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.page-window-user {
+    float: left;
+    color: #fff;
+    margin-left: 65px;
+    padding: 0px 5px 5px 5px;
+}
+
+.page-window-name {
+    float: right;
+    margin-right: 5px;
+}
+
+.page-menu {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 200px;
+    background: #000;
+    filter: alpha(opacity=80); /*IE滤镜，透明度50%*/
+    -moz-opacity: 0.8; /*Firefox私有，透明度50%*/
+    opacity: 0.8; /*其他，透明度50%*/
+    overflow: hidden;
+}
+
+.page-menu-item {
+    margin-top: 5px;
+    cursor: default;
+    width: 190px;
+    padding: 5px;
+}
+
+.page-menu-item-select {
+    margin-top: 5px;
+    cursor: default;
+    width: 190px;
+    padding: 5px;
+    background: #888888;
+    color: #000099;
+}
+
+.page-menu-text {
+    float: left;
+    padding-left: 5px;
+    padding-top: 2px;
+    color: #fff;
+}
+
+.page-login-user {
+    padding: 50px 0px 0px 50px;
+}
+
+.page-login-pwd {
+    padding: 20px 0px 0px 50px;
+}
+
+.page-login-info {
+    padding: 62px 0px 0px 110px;
+}
+
+    .page-login-info a:hover {
+        color: #ddd;
+    }
+
+.page-uploaddialog {
+    position: absolute;
+    left: 50px;
+    top: 90px;
+    width: 360px;
+    height: 240px;
+}
+
+.page-uploaddialog-rect {
+    position: relative;
+    width: 360px;
+    height: 240px;
+}
+
+.page-uploaddialog-bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 360px;
+    height: 240px;
+    background: #000;
+    filter: alpha(opacity=80); /*IE滤镜，透明度50%*/
+    -moz-opacity: 0.8; /*Firefox私有，透明度50%*/
+    opacity: 0.8; /*其他，透明度50%*/
+}
+
+.page-uploaddialog-title {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    color: #fff;
+}
+
+.page-uploaddialog-work {
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    color: #000;
+    background: #fff;
+    width: 350px;
+    height: 215px;
+}
+
+.page-uploaddialog-frame {
+    border: 0px solid #fff;
+    width: 350px;
+    height: 180px;
+}
+
+.page-uploaddialog-button {
+    width: 60px;
+    height: 18px;
+    padding-top: 2px;
+}
+
+.page-datedialog {
+    position: absolute;
+    left: 50px;
+    top: 90px;
+    width: 360px;
+    height: 240px;
+}

@@ -1,0 +1,28 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemEvents')
+CREATE TABLE [SystemEvents](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[TableID] numeric(18,0),
+[Table] varchar(50),
+[Name] varchar(50),
+[AzSQL] Text,
+[AzScript] Text,
+[AzJson] Text
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemEvents' and syscolumns.name='TableID')
+alter table [SystemEvents] add [TableID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemEvents' and syscolumns.name='Table')
+alter table [SystemEvents] add [Table] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemEvents' and syscolumns.name='Name')
+alter table [SystemEvents] add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemEvents' and syscolumns.name='AzSQL')
+alter table [SystemEvents] add [AzSQL] Text;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemEvents' and syscolumns.name='AzScript')
+alter table [SystemEvents] add [AzScript] Text;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemEvents' and syscolumns.name='AzJson')
+alter table [SystemEvents] add [AzJson] Text;

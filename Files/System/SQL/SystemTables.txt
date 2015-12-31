@@ -1,0 +1,48 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemTables')
+CREATE TABLE SystemTables(
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[Text] varchar(50),
+[Type] varchar(50),
+[Index] int,
+[Visible] int,
+[CustomSQL] int,
+[InheritTable] numeric(18,0),
+[InheritSetting] text,
+[EventAdd] int,
+[EventEdit] int,
+[SaveCheck] int
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='Name')
+alter table SystemTables add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='Text')
+alter table SystemTables add [Text] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='Type')
+alter table SystemTables add [Type] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='Index')
+alter table [SystemTables] add [Index] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='Visible')
+alter table [SystemTables] add [Visible] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='CustomSQL')
+alter table [SystemTables] add [CustomSQL] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='InheritTable')
+alter table [SystemTables] add [InheritTable] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='InheritSetting')
+alter table [SystemTables] add [InheritSetting] text;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='EventAdd')
+alter table [SystemTables] add [EventAdd] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='EventEdit')
+alter table [SystemTables] add [EventEdit] int;
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemTables' and syscolumns.name='SaveCheck')
+alter table [SystemTables] add [SaveCheck] int;

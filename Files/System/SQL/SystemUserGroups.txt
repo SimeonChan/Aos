@@ -1,0 +1,12 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemUserGroups')
+CREATE TABLE [SystemUserGroups](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[UserID] numeric(18,0),
+[GroupID] numeric(18,0)
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUserGroups' and syscolumns.name='UserID')
+alter table [SystemUserGroups] add [UserID] numeric(18,0);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemUserGroups' and syscolumns.name='GroupID')
+alter table [SystemUserGroups] add [GroupID] numeric(18,0);

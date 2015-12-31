@@ -1,0 +1,12 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemGroups')
+CREATE TABLE SystemGroups(
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[Department] numeric(18,0)
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemGroups' and syscolumns.name='Name')
+alter table [SystemGroups] add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemGroups' and syscolumns.name='Department')
+alter table [SystemGroups] add [Department] numeric(18,0);

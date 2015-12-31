@@ -1,0 +1,1 @@
+Select [Code],[Name],[Sex] From [EMEmployee] Where [TurnoverDate]=''

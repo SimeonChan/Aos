@@ -1,0 +1,70 @@
+﻿@charset "utf-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+img {
+    border: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #2f79b5;
+    }
+
+/*白色链接*/
+.a-white:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.a-white:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.a-white:hover {
+    text-decoration: none;
+    color: #ccc;
+}
+
+/*蓝色链接*/
+.a-blue:link {
+    text-decoration: none;
+    color: #0094ff;
+}
+
+.a-blue:visited {
+    text-decoration: none;
+    color: #0094ff;
+}
+
+.a-blue:hover {
+    text-decoration: none;
+    color: #ff6a00;
+}
+
+.pub-left {
+    float: left;
+}
+
+.pub-right {
+    float: right;
+}
+
+.pub-clear {
+    clear: both;
+}

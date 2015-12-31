@@ -1,0 +1,1 @@
+Select [ID],[Name],[Text] From [SystemTables] where lv!=99 order by [Name]

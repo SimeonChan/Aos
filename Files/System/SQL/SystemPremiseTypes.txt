@@ -1,0 +1,39 @@
+If Not Exists(select ID from sysobjects where type='U' and name='SystemPremiseTypes')
+CREATE TABLE [SystemPremiseTypes](
+[ID] numeric(18,0) identity(1,1) PRIMARY KEY,
+[Name] varchar(50),
+[Description] text
+);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemPremiseTypes' and syscolumns.name='Name')
+alter table [SystemPremiseTypes] add [Name] varchar(50);
+
+If Not Exists(SELECT syscolumns.id FROM syscolumns,sysobjects WHERE syscolumns.id=sysobjects.id and sysobjects.name='SystemPremiseTypes' and syscolumns.name='Description')
+alter table [SystemPremiseTypes] add [Description] text;
+
+If Not Exists(SELECT [ID] FROM [SystemPremiseTypes] WHERE [Name]='等于')
+INSERT INTO [SystemPremiseTypes]([Name],[Description]) VALUES ('等于','判断前者是否完全等同于后者，如：5等于5');
+
+If Not Exists(SELECT [ID] FROM [SystemPremiseTypes] WHERE [Name]='不等于')
+INSERT INTO [SystemPremiseTypes]([Name],[Description]) VALUES ('不等于','判断前者是否完全不同于后者，如：5不等于3');
+
+If Not Exists(SELECT [ID] FROM [SystemPremiseTypes] WHERE [Name]='大于')
+INSERT INTO [SystemPremiseTypes]([Name],[Description]) VALUES ('大于','判断前者是否大于后者，如：5大于3');
+
+If Not Exists(SELECT [ID] FROM [SystemPremiseTypes] WHERE [Name]='大于等于')
+INSERT INTO [SystemPremiseTypes]([Name],[Description]) VALUES ('大于等于','判断前者是否大于或者完全等同于后者，如：5大于等于3，5大于等于5');
+
+If Not Exists(SELECT [ID] FROM [SystemPremiseTypes] WHERE [Name]='小于')
+INSERT INTO [SystemPremiseTypes]([Name],[Description]) VALUES ('小于','判断前者是否小于后者，如：3小于5');
+
+If Not Exists(SELECT [ID] FROM [SystemPremiseTypes] WHERE [Name]='小于等于')
+INSERT INTO [SystemPremiseTypes]([Name],[Description]) VALUES ('小于等于','判断前者是否小于或者完全等同于后者，如：3小于等于5，5小于等于5');
+
+If Not Exists(SELECT [ID] FROM [SystemPremiseTypes] WHERE [Name]='包含')
+INSERT INTO [SystemPremiseTypes]([Name],[Description]) VALUES ('包含','判断前者是否包含后者的内容，如：“这是一个事例”包含“是一个”');
+
+If Not Exists(SELECT [ID] FROM [SystemPremiseTypes] WHERE [Name]='开始于')
+INSERT INTO [SystemPremiseTypes]([Name],[Description]) VALUES ('开始于','判断前者是否以后者的内容作为开头，如：“这是一个事例”开始于“这是”');
+
+If Not Exists(SELECT [ID] FROM [SystemPremiseTypes] WHERE [Name]='结束于')
+INSERT INTO [SystemPremiseTypes]([Name],[Description]) VALUES ('结束于','判断前者是否以后者的内容作为结束，如：“这是一个事例”结束于“事例”');

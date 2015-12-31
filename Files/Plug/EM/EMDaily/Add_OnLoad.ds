@@ -1,0 +1,42 @@
+var UserID,number
+var UserName,string
+var Date,string
+var Sql,string
+
+Flag main,1
+
+    ;读取用户编号
+    Mov {000},1
+    LEA {001},"ID"
+    Call UserID,"User"
+
+    ;读取当前时间
+    Mov {000},0
+    Call Date,"GetDate"
+
+    ;创建读取SQL语句
+    mov Sql,"Select [Nick] from [SystemUsers] where [ID]="
+    join Sql,UserID
+
+    ;读取SQL内容
+    mov {000},1
+    lea {001},Sql
+    call UserName,"SqlRead"
+
+    ;更新内容到表单
+    mov {000},2
+    lea {001},"DailyDate.Content"
+    lea {002},Date
+    call {},"SetForm"
+
+    ;更新内容到表单
+    mov {000},2
+    lea {001},"OperateUser.Content"
+    lea {002},UserID
+    call {},"SetForm"
+
+    ;更新内容到表单
+    mov {000},2
+    lea {001},"C001S.Content"
+    lea {002},UserName
+    call {},"SetForm"
