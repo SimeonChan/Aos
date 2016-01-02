@@ -1,5 +1,4 @@
 # Azalea Web Open Source System
---------------------------
 ##概述##
 Azalea Web Open Source System（映山红在线开源数据管理系统）简称AzaleaOS或AOS（下称AzaleaOS）。
 
