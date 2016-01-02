@@ -1,7 +1,7 @@
-# Azalea Web Open Source System（映山红在线开源数据管理系统）
+# Azalea Web Open Source System
 --------------------------
 ##概述##
-AzaleaOS/AOS是Azalea Web Open Source System（映山红在线开源数据管理系统）的缩写。
+Azalea Web Open Source System（映山红在线开源数据管理系统）简称AzaleaOS或AOS（下称AzaleaOS）。
 
 AzaleaOS基于Asp.Net 2.0框架开发，使用Microsoft Sql Server数据库。
 
