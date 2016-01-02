@@ -1,8 +1,5 @@
-# Aos
-Asp.Net 2.0(C#)+Microsoft Sql Server
-
+# Azalea Web Open Source System（映山红在线开源数据管理系统）
 --------------------------
-
 ##概述##
 AzaleaOS/AOS是Azalea Web Open Source System（映山红在线开源数据管理系统）的缩写。
 
