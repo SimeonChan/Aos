@@ -118,10 +118,20 @@
                 string szSettingDir = Server.MapPath(gSystemTables.Structure.SavePath);
                 if (!System.IO.Directory.Exists(szSettingDir)) System.IO.Directory.CreateDirectory(szSettingDir);
 
-                string szScriptFile = szSettingDir + "\\Add_OnLoad.ds";
+                //读取初始化脚本
+                string szPageScript = ""; //Pub.IO.ReadAllText(szScriptFile);
+
+                //string szScriptFile = szSettingDir + "\\Add_OnLoad.ds";
 
                 if (lngID > 0) {
-                    szScriptFile = szSettingDir + "\\Edit_OnLoad.ds";
+                    //szScriptFile = szSettingDir + "\\Edit_OnLoad.ds";
+
+                    using (dyk.DB.OA.SystemEvents.ExecutionExp se = new dyk.DB.OA.SystemEvents.ExecutionExp(this.BaseConnectString)) {
+                        if (se.GetDataByTableIDAndName(gintTable, "Edit_OnLoad")) {
+                            szPageScript = se.Structure.DScript;
+                        }
+                    }
+
                     string sql = "Select * from [" + gSystemTables.Structure.Name + "] where [ID]=" + lngID;
                     Conn.ExecuteReader(sql);
                     if (Conn.DataReader.Read()) {
@@ -129,10 +139,15 @@
                             gCache[Conn.DataReader.GetName(i)]["Content"].Value = Conn.DataReader[i].ToString();
                         }
                     }
+                } else {
+                    using (dyk.DB.OA.SystemEvents.ExecutionExp se = new dyk.DB.OA.SystemEvents.ExecutionExp(this.BaseConnectString)) {
+                        if (se.GetDataByTableIDAndName(gintTable, "Add_OnLoad")) {
+                            szPageScript = se.Structure.DScript;
+                        }
+                    }
                 }
 
-                //读取初始化脚本
-                string szPageScript = Pub.IO.ReadAllText(szScriptFile);
+
 
                 using (DsLibrary lib = new DsLibrary(this, this.BaseConnectString, gCache)) {
                     using (dyk.Script.Code.Program.Actuator act = new dyk.Script.Code.Program.Actuator(szPageScript, lib)) {

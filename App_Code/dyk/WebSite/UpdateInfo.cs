@@ -52,7 +52,12 @@ namespace dyk.WebSite {
             UpdateInfoItem item = new UpdateInfoItem();
             item.Version = "1.04.16.0107";
             item.Items.Add("更改版本计数方式，将年份段放在第三段，月份和修正版本放在最后一段");
-            item.Items.Add("增加DS保存中事件的交互性，停止使用原UI中的AZS保存事件");
+            item.Items.Add("增加DS脚本在保存中事件的交互性，停止使用原UI中的AZS保存事件");
+            item.Items.Add("修改UI界面中的保存脚本信息存储为数据库方式，替代原本的文本方式");
+            item.Items.Add("增加数据字段选择性保存项，控制数据在保存时进行选择性保存，增加数据安全性和完整性控制");
+            item.Items.Add("增加数据字段唯一性选型和验证");
+            item.Items.Add("增加数据字段二维表格专有信息");
+            item.Items.Add("增加数据字段绑定信息定义，取代原有的AzSql脚本绑定模式");
             gszAppUpdateInfo.Add(item);
         }
 
