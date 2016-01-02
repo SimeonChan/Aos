@@ -9,6 +9,17 @@ AzaleaOS是组织在Web环境下的办公自动化系统，至少包括组织管
 ##界面截图##
 ![](https://github.com/inmount/Aos/blob/master/images/Screenshot/001.jpg)
 
+![](https://github.com/inmount/Aos/blob/master/images/Screenshot/002.jpg)
+
+![](https://github.com/inmount/Aos/blob/master/images/Screenshot/003.jpg)
+
+![](https://github.com/inmount/Aos/blob/master/images/Screenshot/004.jpg)
+
+![](https://github.com/inmount/Aos/blob/master/images/Screenshot/005.jpg)
+
+![](https://github.com/inmount/Aos/blob/master/images/Screenshot/006.jpg)
+
+![](https://github.com/inmount/Aos/blob/master/images/Screenshot/007.jpg)
 ##更新日志##
 ###1.04.16.0107###
 1、更改版本计数方式，将年份段放在第三段，月份和修正版本放在最后一段
