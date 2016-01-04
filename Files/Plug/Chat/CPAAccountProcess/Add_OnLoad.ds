@@ -1,0 +1,98 @@
+Var Sql,String
+Var ID,number
+Var Name,String
+var ProcessID,number
+Var ProcessName,String
+Var UserID,Number
+var Now,string
+
+Flag main,1
+
+    ;读取用户编号
+    Mov {000},1
+    LEA {001},"ID"
+    Call UserID,"User"
+
+    ;读取当前时间
+    Mov {000},0
+    Call Now,"GetDateTime"
+
+    ;读取用户名
+    Mov {000},1;指定该Call拥有一个参数
+    LEA {001},"Arg_ID"
+    Call ID,"Request"
+
+    ;生成sql语句
+    Mov Sql,"select [Name] from [CPAAccountClient] where [ID]="
+    Join Sql,ID
+
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call Name,"SqlRead"
+
+    ;设置企业名称
+    Mov {000},2;指定该Call拥有一个参数
+    LEA {001},"CName.Content"
+    LEA {002},Name
+    Call {},"SetForm"
+
+    ;生成sql语句
+    Mov Sql,"select [ProcessID] from [CPAAccountClient] where [ID]="
+    Join Sql,ID
+
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call ProcessID,"SqlRead"
+
+    ;判断ProcssID是否大于零
+    larg ProcessID,0
+    jmp {0},"GetNextProcess"
+
+    ;设置为代理记账流程入口
+    mov ProcessID,4
+
+flag GetNextProcess,1
+
+    ;生成sql语句
+    Mov Sql,"select [ID] from [EMProcess] where [BeforeID]="
+    Join Sql,ProcessID
+
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call ProcessID,"SqlRead"
+
+    ;设置流程编号
+    Mov {000},2;指定该Call拥有一个参数
+    LEA {001},"ProcessID.Content"
+    LEA {002},ProcessID
+    Call {},"SetForm"
+
+    ;生成sql语句
+    Mov Sql,"select [Name] from [EMProcess] where [ID]="
+    Join Sql,ProcessID
+
+    ;执行Sql语句
+    Mov {000},1;指定该Call没有参数
+    LEA {001},Sql
+    Call ProcessName,"SqlRead"
+
+    ;设置流程名称
+    Mov {000},2;指定该Call拥有一个参数
+    LEA {001},"ProcessName.Content"
+    LEA {002},ProcessName
+    Call {},"SetForm"
+
+    ;设置流程名称
+    Mov {000},2;指定该Call拥有一个参数
+    LEA {001},"OperateTime.Content"
+    LEA {002},now
+    Call {},"SetForm"
+
+    ;设置流程名称
+    Mov {000},2;指定该Call拥有一个参数
+    LEA {001},"OperateUser.Content"
+    LEA {002},UserID
+    Call {},"SetForm"

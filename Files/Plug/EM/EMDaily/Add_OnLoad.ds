@@ -25,7 +25,7 @@ Flag main,1
 
     ;更新内容到表单
     mov {000},2
-    lea {001},"DailyDate.Content"
+    lea {001},"DailyDate"
     lea {002},Date
     call {},"SetForm"
 

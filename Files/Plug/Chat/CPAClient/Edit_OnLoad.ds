@@ -1,0 +1,25 @@
+var DepartmentID,number
+var Sql,string
+var DepartmentName,string
+
+flag main,1
+    
+    ;读取表单中的部门编号
+    mov {000},1
+    lea {001},"DepartmentID.Content"
+    call DepartmentID,"GetForm"
+    
+    ;创建读取SQL语句
+    mov Sql,"Select [Name] from [SystemDepartments] where [ID]="
+    join Sql,DepartmentID
+
+    ;读取SQL内容
+    mov {000},1
+    lea {001},Sql
+    call DepartmentName,"SqlRead"
+
+    ;更新内容到表单
+    mov {000},2
+    lea {001},"DepartmentName.Content"
+    lea {002},DepartmentName
+    call {},"SetForm"

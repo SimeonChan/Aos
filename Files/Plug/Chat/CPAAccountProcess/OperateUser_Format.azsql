@@ -1,0 +1,5 @@
+<%
+new("id","int")
+id=form("Value")
+%>
+select [Nick] From [SystemUsers] where [ID]=<%=show(id)%>

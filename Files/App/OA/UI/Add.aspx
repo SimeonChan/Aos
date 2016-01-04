@@ -242,7 +242,12 @@
                             //if (obj["Limit"].Value != "") {
                             //    bEditLimit = Limits.CheckLimit(szUserLimits, "[" + obj["Limit"].Value + "]");
                             //}
-                            bEditLimit = slm.Edit;
+                            if (lngID > 0) {
+                                bEditLimit = slm.Edit;
+                            }else{
+                                bEditLimit = slm.Add;
+                            }
+                            
 
                             if (nView == 1) bEditLimit = false;
 
