@@ -141,7 +141,8 @@ namespace dyk.WebSite {
 
                                 for (int j = 0; j < tfp.StructureCollection.Count; j++) {
                                     dyk.DB.OA.TabFilterPremises.StructureExp tfpst = tfp.StructureCollection[j];
-                                    if (res != "") {
+                                    if (szFilterTemp != "")
+                                    {
                                         szFilterTemp += " " + tfpst.GroupType + " ";
                                     }
                                     szFilterTemp += "[" + tfpst.ColumnName + "] " + tfpst.PremiseType + " '" + GetStringInfo(tfpst.Value) + "'";

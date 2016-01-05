@@ -164,7 +164,7 @@
                                 xup.Children.RemoveAt(nIndex);
                                 json["Arg_Table_Filters"].Value = xml.ToString();
                                 //json[szFilterName].Value = szFilter;
-                                szValue = Pub.ValueFormat.getValue(this, this.ConnectString, szValue, gTabs.SystemColumns.Structure.Format, Server.MapPath(this.WebConfig.SharePath + "/" + gTabs.SystemTables.Structure.Name + "/" + gTabs.SystemColumns.Structure.Name + "_Format.azsql"));
+                                szValue = Pub.ValueFormat.getValue(this, this.ConnectString, szValue, gTabs.SystemColumns.Structure.Format, Server.MapPath(SystemTables.Structure.SavePath + "/" + gTabs.SystemColumns.Structure.Name + "_Format.azsql"));
                             %>
                             <div style="float: left; margin: 0px 5px 5px 0px;">
                                 <div style="float: left; padding: 4px; border: 1px solid #009900; border-right: 0px; height: 12px; width: 145px; color: #009900; line-height: 12px; overflow: hidden; white-space: nowrap;"><%=szValue%></div>
