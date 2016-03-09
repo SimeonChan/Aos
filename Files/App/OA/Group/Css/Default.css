@@ -1,0 +1,139 @@
+﻿body {
+    background: #fff;
+    font-size: 12px;
+    color: #222222;
+    padding: 5px;
+}
+
+.FileItem {
+    float: left;
+    width: 64px;
+    height: 64px;
+}
+
+a:link {
+    color: #000099;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000099;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6a00;
+    text-decoration: underline;
+}
+
+.MsgNav {
+    padding: 3px;
+    background: #EEEEEE;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 0px solid #DDDDDD;
+}
+
+    .MsgNav ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .MsgNav li {
+        float: left;
+        list-style: none;
+        padding: 3px;
+        margin-right: 5px;
+        border: 1px solid #EEEEEE;
+        cursor: pointer;
+    }
+
+    .MsgNav img {
+        padding: 0px 0px 0px 0px;
+        margin-right: 3px;
+    }
+
+    .MsgNav span {
+        padding: 1px 0px 0px 0px;
+    }
+
+    .MsgNav a{
+        border:1px solid #000;
+    }
+
+.Nav {
+    padding: 3px;
+    background: #EEEEEE;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 0px solid #DDDDDD;
+}
+
+    .Nav ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .Nav li {
+        float: left;
+        list-style: none;
+        padding: 5px 12px 5px 10px;
+        margin-right: 5px;
+        border: 1px solid #EEEEEE;
+        cursor: pointer;
+    }
+
+    .Nav img {
+        padding: 0px 0px 0px 0px;
+        margin-right: 3px;
+    }
+
+    .Nav span {
+        padding: 1px 0px 0px 0px;
+    }
+
+.li-select {
+    border: 1px solid #0094ff;
+    background: #cdeaff;
+}
+
+.NavLine {
+    padding: 5px 5px 5px 5px;
+    border-top: 0px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+    .NavLine table {
+        border-collapse: collapse;
+    }
+
+    .NavLine th {
+        background: #0094ff;
+        border: 1px solid #fff;
+        padding: 5px;
+        color: #fff;
+    }
+
+    .NavLine td {
+        padding: 3px;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+.ListView {
+    margin: 0 auto;
+    width: 662px;
+    height: 382px;
+    background: url(../Images/bg.jpg);
+}
+
+.TextBox {
+    width: 234px;
+    height: 20px;
+    border: 1px solid #0c4d2f;
+    padding: 1px 3px 1px 3px;
+}

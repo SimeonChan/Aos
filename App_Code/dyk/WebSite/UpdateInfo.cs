@@ -30,6 +30,7 @@ namespace dyk.WebSite {
             //
             gszAppUpdateInfo = new List<UpdateInfoItem>();
 
+            AddUpdate_1_04_1601_0008();
             AddUpdate_1_04_16_0107();
             AddUpdate_1_04_006_1512();
             AddUpdate_1_04_005_1512();
@@ -48,6 +49,18 @@ namespace dyk.WebSite {
             AddUpdate_1_01_004();
         }
 
+        private void AddUpdate_1_04_1601_0008() {
+            UpdateInfoItem item = new UpdateInfoItem();
+            item.Version = "1.04.1601.0008";
+            item.Items.Add("新增：全新的UI生成方式，统一的UI生成算法，提升UI生成效率");
+            item.Items.Add("新增：全新的组合信息数据界面，提供了一种不同于二维表格的展现方式");
+            item.Items.Add("变更：版本升级将会区分新增、修复等内容的前缀，更加便于区分");
+            item.Items.Add("变更：版本计数方式更改，将年份月份段放在第三段，修正版本放在最后一段");
+            item.Items.Add("修复：二级目录操作无法统计到常用数据表中");
+            item.Items.Add("修复：二级目录中出现非标准目录");
+            gszAppUpdateInfo.Add(item);
+        }
+
         private void AddUpdate_1_04_16_0107() {
             UpdateInfoItem item = new UpdateInfoItem();
             item.Version = "1.04.16.0107";
@@ -55,7 +68,7 @@ namespace dyk.WebSite {
             item.Items.Add("增加DS脚本在保存中事件的交互性，停止使用原UI中的AZS保存事件");
             item.Items.Add("修改UI界面中的保存脚本信息存储为数据库方式，替代原本的文本方式");
             item.Items.Add("增加数据字段选择性保存项，控制数据在保存时进行选择性保存，增加数据安全性和完整性控制");
-            item.Items.Add("增加数据字段唯一性选型和验证");
+            item.Items.Add("增加数据字段唯一性选项和验证");
             item.Items.Add("增加数据字段二维表格专有信息");
             item.Items.Add("增加数据字段绑定信息定义，取代原有的AzSql脚本绑定模式");
             gszAppUpdateInfo.Add(item);

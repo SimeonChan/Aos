@@ -52,7 +52,7 @@
                                     <img id="DataManager_Dir_<%=st.ID%>_Sign" src="<%=pg.PageArgs.UIPath%>Images/Close.jpg" height="12" /></a>
                             </div>
                             <%
-                                szClickScript = "X.Custom.DataManager.GetTree(" + st.ID + ");X.Custom.DataManager.GetList(" + st.ID + ");";
+                                        szClickScript = "X.Custom.DataManager.GetTree(" + st.ID + ");X.Custom.DataManager.GetList(" + st.ID + ");";
                             %>
                             <div style="float: left; margin: 2px 0px 0px 6px;">
                                 <a href="javascript:;" onclick="<%=szClickScript%>">
@@ -88,6 +88,7 @@
                                     for (int i = 0; i < sc.StructureCollection.Count; i++) {
                                         dyk.DB.Kernel.SystemCatalog.StructureExp st = sc.StructureCollection[i];
                                         szClickScript = "X.Custom.DataManager.GetList(" + st.ID + ");";
+                                        if (st.Type == 0) { 
                             %>
                             <div style="float: left; width: 100px; height: 100px; text-align: center; padding: 5px;">
                                 <div style="width: 100%; padding: 5px; cursor: pointer;"
@@ -101,6 +102,7 @@
                                 </div>
                             </div>
                             <%
+                                        }
                                     }
                                 }
                             %>

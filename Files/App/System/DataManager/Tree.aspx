@@ -26,6 +26,7 @@
                     for (int i = 0; i < sc.StructureCollection.Count; i++) {
                         dyk.DB.Kernel.SystemCatalog.StructureExp st = sc.StructureCollection[i];
                         string szClickScript = "X.Custom.DataManager.GetTreeNode(" + st.ID + ");";
+                        if (st.Type == 0) { 
             %>
             <div style="margin-left: 12px;">
                 <div style="float: left; margin: 1px 0px 0px 0px;">
@@ -33,7 +34,7 @@
                         <img id="DataManager_Dir_<%=st.ID%>_Sign" src="<%=pg.PageArgs.UIPath%>Images/Close.jpg" height="12" /></a>
                 </div>
                 <%
-                    szClickScript = "X.Custom.DataManager.GetTree(" + st.ID + ");X.Custom.DataManager.GetList(" + st.ID + ");";
+                            szClickScript = "X.Custom.DataManager.GetTree(" + st.ID + ");X.Custom.DataManager.GetList(" + st.ID + ");";
                 %>
                 <div style="float: left; margin: 2px 0px 0px 6px;">
                     <a href="javascript:;" onclick="<%=szClickScript%>">
@@ -44,6 +45,7 @@
             </div>
             <div style="margin-left: 12px; display: none;" id="DataManager_Dir_<%=st.ID%>"></div>
             <%
+                        }
                     }
                 }
             %>

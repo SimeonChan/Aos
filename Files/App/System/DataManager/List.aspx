@@ -76,6 +76,7 @@
                             for (int i = 0; i < sc.StructureCollection.Count; i++) {
                                 dyk.DB.Kernel.SystemCatalog.StructureExp st = sc.StructureCollection[i];
                                 szClickScript = "X.Custom.DataManager.GetList(" + st.ID + ");";
+                                if (st.Type == 0) { 
                     %>
                     <div style="float: left; width: 100px; height: 100px; text-align: center; padding: 5px;">
                         <div style="width: 100%; padding: 5px; cursor: pointer;"
@@ -89,6 +90,7 @@
                         </div>
                     </div>
                     <%
+                                }
                             }
                         }
                     %>
@@ -102,7 +104,7 @@
                                 dyk.Format.Limits lm = Pub.DB.GetTableLimits(this, st.ID);
 
                                 if (lm.Read) {
-                                    szClickScript = "Page.UI.Open('Table_" + st.ID + "','','" + st.Text + "','/Files/App/OA/Process/','Process.aspx', {Arg_Table:" + st.ID + "});";
+                                    szClickScript = "Page.UI.Open('Table_" + st.ID + "','','" + st.Text + "','/Files/App/OA/Process/','Process.aspx', {Arg_Table:" + st.ID + "});X.Custom.DataManager.SetVisit(" + st.ID + ");";
                     %>
                     <div style="float: left; width: 100px; height: 100px; text-align: center; padding: 5px;">
                         <div style="width: 100%; padding: 5px; cursor: pointer;"
