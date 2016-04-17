@@ -170,8 +170,7 @@
                         su.GetDataByName("root");
 
                         //添加root用户的访问权限
-                        dyk.DB.OA.SystemLimits.LimitMgr lm = dyk.DB.OA.SystemLimits.LimitMgr.New();
-                        lm.SetAllLimits();
+                        dyk.Format.Limits lm = dyk.Format.Limits.AllLimits();
                         string szAosConnString = "data source=" + szHost + ";user id=" + szName + ";Password=" + szPwd + ";Initial Catalog=Aos";
                         using (dyk.DB.Aos.AosApps.ExecutionExp aa = new dyk.DB.Aos.AosApps.ExecutionExp(szAosConnString)) {
                             aa.GetDatas();

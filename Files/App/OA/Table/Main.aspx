@@ -214,7 +214,7 @@
                     ///生成快速查询语句
                     if (pg.PageArgs.Arg_Table_Key != "") {
                         for (int i = 0; i < gSystemColumns.StructureCollection.Count; i++) {
-                            dyk.DB.Base.SystemColumns.Structrue st = gSystemColumns.StructureCollection[i];
+                            dyk.DB.Base.SystemColumns.StructureExp st = gSystemColumns.StructureCollection[i];
                             if (KeyOptions != "") KeyOptions += " or ";
                             switch (st.Type.ToLower()) {
                                 case "text":
@@ -233,7 +233,7 @@
                     string szFilters = "";
 
                     for (int i = 0; i < gSystemColumns.StructureCollection.Count; i++) {
-                        dyk.DB.Base.SystemColumns.Structrue st = gSystemColumns.StructureCollection[i];
+                        dyk.DB.Base.SystemColumns.StructureExp st = gSystemColumns.StructureCollection[i];
                         string szFilterValue = pg["Table_Filters_" + st.Name];
                         pg.PageArgs["Table_Filters_" + st.Name].Value = szFilterValue;
                         if (szFilterValue != "") {
@@ -353,7 +353,7 @@
                     ///生成快速查询语句
                     if (pg.PageArgs.Arg_Table_Key != "") {
                         for (int i = 0; i < gSystemColumns.StructureCollection.Count; i++) {
-                            dyk.DB.Base.SystemColumns.Structrue st = gSystemColumns.StructureCollection[i];
+                            dyk.DB.Base.SystemColumns.StructureExp st = gSystemColumns.StructureCollection[i];
                             if (KeyOptions != "") KeyOptions += " or ";
                             switch (st.Type.ToLower()) {
                                 case "text":
@@ -372,7 +372,7 @@
                     string szFilters = "";
                     using (Ly.Formats.XML xml = Xml.Clone()) {
                         for (int i = 0; i < gSystemColumns.StructureCollection.Count; i++) {
-                            dyk.DB.Base.SystemColumns.Structrue st = gSystemColumns.StructureCollection[i];
+                            dyk.DB.Base.SystemColumns.StructureExp st = gSystemColumns.StructureCollection[i];
                             //string szFilterValue = pg["Table_Filters_" + st.Name];
                             //pg.PageArgs["Table_Filters_" + st.Name].Value = szFilterValue;
                             Ly.Formats.XMLUnitPoint xup = xml[st.Name];
@@ -715,7 +715,7 @@
                 using (Ly.Formats.XML xml = Xml.Clone()) {
                     using (ClsAjaxPageArgs Arg = new ClsAjaxPageArgs(pg.PageArgs)) {
                         for (int i = 0; i < gSystemColumns.StructureCollection.Count; i++) {
-                            dyk.DB.Base.SystemColumns.Structrue st = gSystemColumns.StructureCollection[i];
+                            dyk.DB.Base.SystemColumns.StructureExp st = gSystemColumns.StructureCollection[i];
                             string sStyle = "";
                             if (st.Visible == 1) {
                                 string szGou = "<span style=\"\">☆</span>";
@@ -890,7 +890,7 @@
                                     <td style="padding: 3px; white-space: normal; word-break: break-all; border: 1px solid #d0d7e5; vertical-align: middle; text-align: right;"><%=cnt%></td>
                                     <%
                                         for (int i = 0; i < gSystemColumns.StructureCollection.Count; i++) {
-                                            dyk.DB.Base.SystemColumns.Structrue st = gSystemColumns.StructureCollection[i];
+                                            dyk.DB.Base.SystemColumns.StructureExp st = gSystemColumns.StructureCollection[i];
                                             string sStyle = "";
                                             if (st.Visible == 1) {
                                                 //sStyle += "width:" + st.Width + "px;";

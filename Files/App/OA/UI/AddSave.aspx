@@ -62,7 +62,7 @@
                 if (!System.IO.Directory.Exists(szSettingDir)) System.IO.Directory.CreateDirectory(szSettingDir);
 
                 for (int i = 0; i < SystemColumns.StructureCollection.Count; i++) {
-                    dyk.DB.Base.SystemColumns.Structrue st = SystemColumns.StructureCollection[i];
+                    dyk.DB.Base.SystemColumns.StructureExp st = SystemColumns.StructureCollection[i];
                     gCache[st.Name].Value = this[st.Name];
                 }
 
@@ -230,7 +230,7 @@
                         string sValues = "";
 
                         for (int i = 0; i < SystemColumns.StructureCollection.Count; i++) {
-                            dyk.DB.Base.SystemColumns.Structrue st = SystemColumns.StructureCollection[i];
+                            dyk.DB.Base.SystemColumns.StructureExp st = SystemColumns.StructureCollection[i];
                             if (st.Name != "ID") {
                                 string sType = st.Type.ToLower();
                                 string sValue = gCache[st.Name].Value;

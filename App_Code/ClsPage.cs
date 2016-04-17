@@ -36,7 +36,7 @@ public class ClsPage : System.Web.UI.Page {
     /// <summary>
     /// 系统设定集
     /// </summary>
-    public WebConfig WebConfig{
+    public WebConfig WebConfig {
         get { return gConfig; }
     }
 
@@ -191,7 +191,7 @@ public class ClsPage : System.Web.UI.Page {
     /// <summary>
     /// 当前用户信息
     /// </summary>
-    public dyk.DB.Base.SystemUsers.Structrue UserInfo { get { return gUser.Structure; } }
+    public dyk.DB.Base.SystemUsers.StructureExp UserInfo { get { return gUser.Structure; } }
 
     /// <summary>
     /// 获取临时会话信息管理ID

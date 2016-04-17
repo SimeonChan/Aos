@@ -30,6 +30,8 @@ namespace dyk.WebSite {
             //
             gszAppUpdateInfo = new List<UpdateInfoItem>();
 
+            AddUpdate_1_04_1604_010();
+            AddUpdate_1_04_1603_0009();
             AddUpdate_1_04_1601_0008();
             AddUpdate_1_04_16_0107();
             AddUpdate_1_04_006_1512();
@@ -49,11 +51,26 @@ namespace dyk.WebSite {
             AddUpdate_1_01_004();
         }
 
+        private void AddUpdate_1_04_1604_010() {
+            UpdateInfoItem item = new UpdateInfoItem();
+            item.Version = "1.04.1603.010";
+            item.Items.Add("修复：新授权无法正常管理表结构的问题");
+            gszAppUpdateInfo.Add(item);
+        }
+
+        private void AddUpdate_1_04_1603_0009() {
+            UpdateInfoItem item = new UpdateInfoItem();
+            item.Version = "1.04.1603.0009";
+            item.Items.Add("修复：安装过程中个无提示异常错误");
+            gszAppUpdateInfo.Add(item);
+        }
+
         private void AddUpdate_1_04_1601_0008() {
             UpdateInfoItem item = new UpdateInfoItem();
             item.Version = "1.04.1601.0008";
             item.Items.Add("新增：全新的UI生成方式，统一的UI生成算法，提升UI生成效率");
             item.Items.Add("新增：全新的组合信息数据界面，提供了一种不同于二维表格的展现方式");
+            item.Items.Add("新增：编辑UI界面中支持转码");
             item.Items.Add("变更：版本升级将会区分新增、修复等内容的前缀，更加便于区分");
             item.Items.Add("变更：版本计数方式更改，将年份月份段放在第三段，修正版本放在最后一段");
             item.Items.Add("修复：二级目录操作无法统计到常用数据表中");

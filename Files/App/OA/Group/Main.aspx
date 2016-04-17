@@ -357,7 +357,7 @@
         using (Ly.Formats.XML xml = Xml.Clone()) {
           using (ClsAjaxPageArgs Arg = new ClsAjaxPageArgs(pg.PageArgs)) {
             for (int i = 0; i < gSystemColumns.StructureCollection.Count; i++) {
-              dyk.DB.Base.SystemColumns.Structrue st = gSystemColumns.StructureCollection[i];
+              dyk.DB.Base.SystemColumns.StructureExp st = gSystemColumns.StructureCollection[i];
               string sStyle = "";
               if (st.Visible == 1) {
                 string szGou = "<span style=\"\">☆</span>";

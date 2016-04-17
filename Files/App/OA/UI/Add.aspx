@@ -244,10 +244,10 @@
                             //}
                             if (lngID > 0) {
                                 bEditLimit = slm.Edit;
-                            }else{
+                            } else {
                                 bEditLimit = slm.Add;
                             }
-                            
+
 
                             if (nView == 1) bEditLimit = false;
 
@@ -435,7 +435,7 @@
 
                             switch (szType) {
                                 case "textarea":
-                                    sTemp += ">" + txtValue + "</textarea>";
+                                    sTemp += ">" + txtValue.Replace("{\\n}", "\r\n").Replace("{\\\\n}", "{\\n}") + "</textarea>";
                                     break;
                                 case "html":
                                     sTemp += ">";
